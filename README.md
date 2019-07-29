@@ -19,6 +19,8 @@ How to format
 
       estehmanis
       
+ref : [github formating 101](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
+      
 ### ← README.md
 
 formating yg baik dan benar
