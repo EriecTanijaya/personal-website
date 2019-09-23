@@ -1,0 +1,25 @@
+{
+  "name": "webssie",
+  "version": "0.0.1",
+  "description": "a full-stack app to track resolutions and keep folks updated on our achievement status",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./public/server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "startbootstrap-clean-blog": "^5.0.8"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/first-app-node"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
