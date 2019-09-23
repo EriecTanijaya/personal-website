@@ -4,10 +4,10 @@
   "description": "a full-stack app to track resolutions and keep folks updated on our achievement status",
   "main": "index.js",
   "scripts": {
-    "start": "node ./public/server.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "startbootstrap-clean-blog": "^5.0.8"
   },
   "engines": {
