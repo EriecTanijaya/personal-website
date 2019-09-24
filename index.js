@@ -5,12 +5,14 @@ const mongoose = require('mongoose');
 const app = new express();
 const connectionString = process.env.mongo_uri;
 const bodyParser = require('body-parser');
+const fileUpload = require('express-fileupload');
 const Post = require('./database/models/Post');
 
 mongoose.connect(connectionString, { useUnifiedTopology: true, useNewUrlParser: true })
     .then(() => console.log('You are now connected to Mongo!'))
     .catch(err => console.error('Something went wrong', err))
 
+app.use(fileUpload());
 app.use(express.static('public'));
 app.use(expressEdge.engine);
 
@@ -39,9 +41,17 @@ app.get('/posts/new', (req, res) => {
 });
 
 app.post('/posts/store', (req, res) => {
-  console.log(req.body);
-  Post.create(req.body, (error, post) => {
-    res.redirect('/')
+  const {
+    image
+  } = req.files
+  
+  image.mv(path.resolve(__dirname, 'public/posts', image.name), (error) => {
+    Post.create({
+      ...req.body,
+      image: `/posts/${image.name}`
+    }, (error, post) => {
+      res.redirect('/')
+    })
   })
 });
 

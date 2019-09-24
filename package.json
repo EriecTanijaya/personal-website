@@ -11,7 +11,8 @@
     "express-edge": "^2.0.0",
     "startbootstrap-clean-blog": "^5.0.8",
     "mongoose": "^5.7.1",
-    "body-parser": "^1.19.0"
+    "body-parser": "^1.19.0",
+    "express-fileupload": "^1.1.5"
   },
   "engines": {
     "node": "8.x"
