@@ -1,4 +1,4 @@
-const crypto = require('crypto');
+const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema({
@@ -20,10 +20,12 @@ const UserSchema = new mongoose.Schema({
 UserSchema.pre('save', function(next) {
   const user = this;
   
-  crypto.pbkdf2(user.password, 'salt',  100000, 512, 'sha512', function(error, encrypted) {
-    user.password = encrypted;
-    next();
-  })
+  bcrypt.genSalt(10, function(err, salt) {
+    bcrypt.hash(user.password, salt, function(err, hash) {
+      user.password = hash;
+      next();
+    });
+  });
 });
 
 module.exports = mongoose.model('User', UserSchema);
