@@ -47,11 +47,13 @@ app.use(bodyParser.urlencoded({
 
 const storePost = require('./middleware/storePost');
 
+const auth = require('./middleware/auth');
+
 app.use('/posts/store', storePost);
 
 app.get('/', homePageController);
 app.get('/post/:id', getPostController);
-app.get('/posts/new', createPostController);
+app.get('/posts/new', auth, createPostController);
 app.post('/posts/store', storePostController);
 app.get('/auth/register', createUserController);
 app.get('/auth/login', loginController);
