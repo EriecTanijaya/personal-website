@@ -51,6 +51,7 @@ app.use(bodyParser.urlencoded({
 const storePost = require('./middleware/storePost');
 
 const auth = require('./middleware/auth');
+const redirectIfAuthenticated = require('./middleware/redirectIfAuthenticated')
 
 app.use('/posts/store', storePost);
 
