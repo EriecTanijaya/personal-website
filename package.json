@@ -15,7 +15,8 @@
     "express-fileupload": "^1.1.5",
     "bcrypt": "^3.0.6",
     "bcryptjs": "^2.4.3",
-    "express-session": "^1.16.1"
+    "express-session": "^1.16.1",
+    "connect-mongo": "^2.0.3"
   },
   "engines": {
     "node": "8.x"
