@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 const expressSession = require('express-session');
 const connectMongo = require('connect-mongo');
+const connectFlash = require('connect-flash');
 
 const createPostController = require('./controllers/createPost');
 const homePageController = require('./controllers/homePage');
@@ -20,6 +21,8 @@ const app = new express();
 app.use(expressSession({
   secret: 'secret'
 }));
+
+app.use(connectFlash());
 
 const connectionString = process.env.mongo_uri;
 mongoose.connect(connectionString, { useUnifiedTopology: true, useNewUrlParser: true })
