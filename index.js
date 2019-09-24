@@ -1,8 +1,13 @@
 const path = require('path');
 const express = require('express');
 const expressEdge = require('express-edge');
-
+const mongoose = require('mongoose');
 const app = new express();
+const connectionString = process.env.mongo_uri;
+
+mongoose.connect(connectionString, { useUnifiedTopology: true, useNewUrlParser: true })
+    .then(() => console.log('You are now connected to Mongo!'))
+    .catch(err => console.error('Something went wrong', err))
 
 app.use(express.static('public'));
 app.use(expressEdge.engine);

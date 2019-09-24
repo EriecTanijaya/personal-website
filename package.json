@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "express-edge": "^2.0.0",
     "startbootstrap-clean-blog": "^5.0.8",
-    "express-edge": "^2.0.0"
+    "mongoose": "^5.7.1"
   },
   "engines": {
     "node": "8.x"
