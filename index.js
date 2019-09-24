@@ -21,10 +21,8 @@ const logoutController = require('./controllers/logout');
 const app = new express();
 
 app.use(expressSession({
-  secret: 'secret',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true }
+  secret: 'secret'
+ 
 }));
 
 app.use(connectFlash());
@@ -38,9 +36,7 @@ const mongoStore = connectMongo(expressSession);
 
 app.use(expressSession({
   secret: 'secret',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true },
+ 
   store: new mongoStore({
     mongooseConnection: mongoose.connection
   })
