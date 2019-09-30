@@ -73,7 +73,7 @@ app.get('/posts/new', auth, createPostController);
 app.post('/posts/store', auth, storePost, storePostController);
 app.get('/auth/register', redirectIfAuthenticated, createUserController);
 app.get('/auth/login', redirectIfAuthenticated, loginController);
-app.get('/auth/logout', redirectIfAuthenticated, logoutController);
+app.get('/auth/logout', logoutController);
 app.post('/users/login', redirectIfAuthenticated, loginUserController);
 app.post('/users/register', redirectIfAuthenticated, storeUserController);
 
