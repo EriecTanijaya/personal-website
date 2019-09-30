@@ -1,5 +1,5 @@
 const express = require('express');
-//const edge = require('edge.js');
+const edge = require('edge.js');
 const expressEdge = require('express-edge');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -21,8 +21,9 @@ const logoutController = require('./controllers/logout');
 const app = new express();
 
 app.use(expressSession({
-  secret: 'secret'
- 
+  secret: 'secret',
+  saveUninitialized: true,
+  resave: true
 }));
 
 app.use(connectFlash());
@@ -36,7 +37,8 @@ const mongoStore = connectMongo(expressSession);
 
 app.use(expressSession({
   secret: 'secret',
- 
+  saveUninitialized: true,
+  resave: true,
   store: new mongoStore({
     mongooseConnection: mongoose.connection
   })
