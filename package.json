@@ -7,18 +7,18 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
     "express": "^4.17.1",
     "express-edge": "^2.0.0",
-    "startbootstrap-clean-blog": "^5.0.8",
-    "mongoose": "^5.7.1",
-    "body-parser": "^1.19.0",
     "express-fileupload": "^1.1.5",
-    "bcrypt": "^3.0.6",
-    "bcryptjs": "^2.4.3",
     "express-session": "^1.16.1",
-    "connect-mongo": "^2.0.3",
-    "connect-flash": "^0.1.1",
-    "edge.js": "^2.0.2"
+    "mongoose": "^5.7.1",
+    "startbootstrap-clean-blog": "^5.0.8",
+    "edge.js": "^2.0.2",
+    "@adonisjs/ignitor": "^2.0.8"
   },
   "engines": {
     "node": "8.x"

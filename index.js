@@ -1,6 +1,6 @@
 const express = require('express');
-const edge = require('edge.js');
 const expressEdge = require('express-edge');
+const edge = require('edge.js');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
@@ -44,22 +44,24 @@ app.use(expressSession({
   })
 }));
 
-app.use(fileUpload());
+
 app.use(express.static('public'));
 app.use(expressEdge.engine);
 app.set('views', __dirname + '/views');
 
-/**
 app.use('*', (req, res, next) => {
-  edge.global('auth', req.session.userId)
+  //console.log(edge);
+  //edge.global('auth', req.session.userId)
   next();
 });
-**/
+
+app.use(fileUpload());
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
 
 const storePost = require('./middleware/storePost');
 const auth = require('./middleware/auth');
