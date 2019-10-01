@@ -49,12 +49,6 @@ app.use(express.static('public'));
 app.use(expressEdge.engine);
 app.set('views', __dirname + '/views');
 
-app.use('*', (req, res, next) => {
-  //console.log(edge);
-  //edge.global('auth', req.session.userId)
-  next();
-});
-
 app.use(fileUpload());
 
 app.use(bodyParser.json())
