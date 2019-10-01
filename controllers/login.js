@@ -1,3 +1,4 @@
 module.exports = (req, res) => {
-  res.render('login');
+  const title = 'WeekyDay Blog | Login';
+  res.render('login', {title});
 }

@@ -1,6 +1,7 @@
 module.exports = (req, res) => {
   if (req.session.userId){
-    return res.render('create');
+    const title = 'WeekyDay Blog | Create Post';
+    return res.render('create', {title});
   }
   
   res.redirect('/auth/login');
