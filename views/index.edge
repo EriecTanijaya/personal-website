@@ -45,7 +45,13 @@
       <hr>
       @elseif(pages > 1 && current == pages)
       <div class="clearfix">
-        <a class="btn btn-primary float-left" href="/p/{{ (current - 1) }}">Newer Posts &rarr;</a>
+        <a class="btn btn-primary float-left" href="/p/{{ (current - 1) }}">&larr; Newer Posts</a>
+      </div>
+      <hr>
+      @elseif(pages > 1)
+      <div class="clearfix">
+        <a class="btn btn-primary float-left" href="/p/{{ (current - 1) }}">&larr; Newer Posts</a>
+        <a class="btn btn-primary float-right" href="/p/{{ (current + 1) }}">Older Posts &rarr;</a>
       </div>
       <hr>
       @endif
