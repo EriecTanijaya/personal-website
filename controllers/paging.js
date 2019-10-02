@@ -22,7 +22,8 @@ module.exports = (req, res, next) => {
           posts: posts,
           current: page,
           pages: pages,
-          title: title
+          title: title,
+          auth: req.session.userId
         })
       })
     })

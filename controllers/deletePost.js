@@ -19,8 +19,6 @@ module.exports = async (req, res) => {
     })
   }
   
-  
-  
   Post.findByIdAndDelete(req.params.id, function(err){
     if (err) console.log(err);
     console.log('sukse delete ' + post.title);

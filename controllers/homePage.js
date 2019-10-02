@@ -18,7 +18,8 @@ module.exports = (req, res, next) => {
           posts: posts,
           current: page,
           pages: Math.ceil(count / perPage),
-          title: title
+          title: title,
+          auth: req.session.userId
         })
       })
     })
