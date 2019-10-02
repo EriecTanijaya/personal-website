@@ -1,12 +1,10 @@
 const Post = require("../database/models/Post");
 
 module.exports = (req, res, next) => {
-  
-  //TODO: buat pagination system, jadi posts ini, kasih sampai 5 length aja
-  //pas tekan show older post, buatlah itu nama_web.com/p/1 -> ini utk homepage
   var perPage = 5;
-  var page = req.params.page || 1;
-  var title = "WeekyDay Blog | Home";
+  var page = parseInt(req.params.page);
+  
+  var title = "WeekyDay Blog | Blogs";
   Post
     .find({})
     .skip((perPage * page) - perPage)
@@ -22,4 +20,4 @@ module.exports = (req, res, next) => {
         })
       })
     })
-};
+}

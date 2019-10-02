@@ -21,6 +21,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
+    
       @each(post in posts)
         <div class="post-preview">
           <a href="/post/{{ post._id }}">
@@ -37,13 +38,21 @@
       @endeach
       
       <!-- Pager -->
+      @if(pages > 1 && current == 1)
       <div class="clearfix">
-        <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        <a class="btn btn-primary float-right" href="/p/{{ (current + 1) }}">Older Posts &rarr;</a>
       </div>
+      <hr>
+      @elseif(pages > 1 && current == pages)
+      <div class="clearfix">
+        <a class="btn btn-primary float-left" href="/p/{{ (current - 1) }}">Newer Posts &rarr;</a>
+      </div>
+      <hr>
+      @endif
       
     </div>
   </div>
 </div>
  
-<hr>
+
 @endsection
