@@ -18,6 +18,7 @@ const loginController = require("./controllers/login");
 const loginUserController = require("./controllers/loginUser");
 const logoutController = require("./controllers/logout");
 const deletePostController = require("./controllers/deletePost");
+//const pagingController = require("./controllers/paging");
 
 const app = new express();
 
@@ -83,6 +84,8 @@ app.get("/auth/logout", logoutController);
 app.post("/users/login", redirectIfAuthenticated, loginUserController);
 app.post("/users/register", redirectIfAuthenticated, storeUserController);
 app.get("/post/delete/:id", auth, deletePostController);
+
+//app.get("/p/:page", pagingController);
 
 app.listen(4000, () => {
   console.log("app listening to port 4000");
