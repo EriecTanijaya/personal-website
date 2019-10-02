@@ -15,7 +15,7 @@
     "express-edge": "^2.0.0",
     "express-fileupload": "^1.1.5",
     "express-session": "^1.16.1",
-    "mongoose": "^5.7.1",
+    "mongoose": "^5.7.3",
     "startbootstrap-clean-blog": "^5.0.8",
     "edge.js": "^2.0.2",
     "@adonisjs/ignitor": "^2.0.8"

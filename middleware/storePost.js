@@ -1,4 +1,7 @@
 module.exports = (req, res, next) => {
+  
+  req.body.username = req.session.username;
+  
   if (
     !req.files.image ||
     !req.body.username ||

@@ -15,6 +15,7 @@ module.exports = (req, res) => {
           if (same) {
             // store user session.
             req.session.userId = user._id;
+            req.session.username = user.username;
             req.session.save(function(err) {
               // session saved
               res.redirect("/");
