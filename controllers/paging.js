@@ -14,7 +14,7 @@ module.exports = (req, res, next) => {
       Post.countDocuments().exec(function (err, count){
         var pages = Math.ceil(count / perPage);
         
-        //kalau page 0/ minus dan kalau berlebihan
+        //kalau page dibawah 0/ minus dan kalau berlebihan
         if (page < 1 || page > pages){
           return res.redirect('/');
         }

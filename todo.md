@@ -9,6 +9,8 @@ https://blacksuan19.me/material-ocean
 
 https://cssminifier.com/
 
+hover fas footer
+
 buat account managament system, cek kalau ada email yang sama, \
 cek kalau ada username yang sama
 

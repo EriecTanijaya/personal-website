@@ -6,8 +6,12 @@
 
 body {
   font-size: 20px;
-  color: #0F111A;
+  background-color: #E5E9F0;
   font-family: 'Lora', 'Times New Roman', serif;
+}
+
+footer {
+  background-color: #E5E9F0;
 }
 
 p {
@@ -90,7 +94,7 @@ img::-moz-selection {
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #3A575C;
-  background-color: #E5E9F0;
+  background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -112,6 +116,7 @@ img::-moz-selection {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #0F111A;
 }
 
 @media only screen and (min-width: 992px) {
@@ -121,14 +126,14 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: #E5E9F0;
+    color: white;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #BF616A;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: #E5E9F0;
+    color: white;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: #88C0D0;
@@ -148,7 +153,7 @@ img::-moz-selection {
     top: -67px;
     transition: transform 0.2s;
     border-bottom: 1px solid #E5E9F0;
-    background-color: #E5E9F0;
+    background-color: white;
   }
   #mainNav.is-fixed .navbar-brand {
     color: #3A575C;
@@ -267,10 +272,6 @@ header.masthead .post-heading .meta a {
   }
 }
 
-.post-preview > a {
-  color: #212529;
-}
-
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
   color: #0085A1;
@@ -280,28 +281,30 @@ header.masthead .post-heading .meta a {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
+  color: #3A575C;
 }
 
 .post-preview > a > .post-subtitle {
   font-weight: 300;
   margin: 0 0 10px;
+  color: #00010A;
 }
 
 .post-preview > .post-meta {
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
-  color: #868e96;
+  color: #3B4252;
 }
 
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #212529;
+  color: #0F111A;
 }
 
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: #0085A1;
+  color: #88C0D0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -377,6 +380,16 @@ footer .list-inline {
   margin: 0;
   padding: 0;
 }
+
+/**
+.fas {
+  color: #3A575C;
+}
+
+.fas:hover {
+  color: #88C0D0;
+}
+**/
 
 footer .copyright {
   font-size: 14px;
