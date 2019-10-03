@@ -5,6 +5,10 @@ Rebrand buat minimalis
 
 ~~buat pagination system~~
 
+https://blacksuan19.me/material-ocean
+
+https://cssminifier.com/
+
 buat account managament system, cek kalau ada email yang sama, \
 cek kalau ada username yang sama
 

@@ -7,6 +7,7 @@ module.exports = (req, res, next) => {
   var title = "WeekyDay Blog | Blogs";
   Post
     .find({})
+    .sort('-createdAt')
     .skip((perPage * page) - perPage)
     .limit(perPage)
     .exec(function (err, posts){
