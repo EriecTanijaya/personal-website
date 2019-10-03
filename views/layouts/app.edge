@@ -31,29 +31,29 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" style="color: #34575C" href="/">WeekyDay Blog</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" style="color: #34575C" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="/">WeekyDay Blog</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" style="color: #0F111A" href="/">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           @if(!auth)
           <li class="nav-item">
-            <a class="nav-link" style="color: #0F111A" href="/auth/login">Login</a>
+            <a class="nav-link" href="/auth/login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #0F111A" href="/auth/register">Register</a>
+            <a class="nav-link" href="/auth/register">Register</a>
           </li>
           @else
           <li class="nav-item">
-            <a class="nav-link" style="color: #0F111A" href="/posts/new">New Post</a>
+            <a class="nav-link" href="/posts/new">New Post</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #0F111A" href="/auth/logout">Logout</a>
+            <a class="nav-link" href="/auth/logout">Logout</a>
           </li>
           @endif
         </ul>
@@ -71,7 +71,7 @@
           <ul class="list-inline text-center">
             <li class="list-inline-item">
               <a href="#">
-                <span class="fa-stack fa-lg" style="color: #34575C">
+                <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                 </span>
@@ -79,7 +79,7 @@
             </li>
             <li class="list-inline-item">
               <a href="#">
-                <span class="fa-stack fa-lg" style="color: #34575C">
+                <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                 </span>
@@ -87,7 +87,7 @@
             </li>
             <li class="list-inline-item">
               <a href="#">
-                <span class="fa-stack fa-lg" style="color: #34575C">
+                <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                 </span>

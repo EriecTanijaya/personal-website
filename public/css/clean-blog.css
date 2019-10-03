@@ -6,7 +6,7 @@
 
 body {
   font-size: 20px;
-  color: #212529;
+  color: #0F111A;
   font-family: 'Lora', 'Times New Roman', serif;
 }
 
@@ -30,12 +30,12 @@ h6 {
 }
 
 a {
-  color: #212529;
+  color: #00010A;
   transition: all 0.2s;
 }
 
 a:focus, a:hover {
-  color: #0085A1;
+  color: #88C0D0;
 }
 
 blockquote {
@@ -89,14 +89,14 @@ img::-moz-selection {
 
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
+  border-bottom: 1px solid #3A575C;
+  background-color: #E5E9F0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #343a40;
+  color: #3A575C;
 }
 
 #mainNav .navbar-toggler {
@@ -104,7 +104,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: #3B4252;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -121,17 +121,17 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: #fff;
+    color: #E5E9F0;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #BF616A;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: #fff;
+    color: #E5E9F0;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #88C0D0;
   }
 }
 
@@ -147,20 +147,20 @@ img::-moz-selection {
     position: fixed;
     top: -67px;
     transition: transform 0.2s;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #E5E9F0;
+    background-color: #E5E9F0;
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #3A575C;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
+    color: #88C0D0;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
+    color: #3A575C;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
+    color: #88C0D0;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -171,7 +171,7 @@ img::-moz-selection {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #868e96;
+  background-color: #3A575C;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
@@ -183,7 +183,7 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #212529;
+  background-color: #3B4252;
   opacity: 0.5;
 }
 
