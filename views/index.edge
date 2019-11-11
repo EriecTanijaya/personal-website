@@ -9,8 +9,13 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
+          @if(username)
+            <h1>Hi {{ username }} !</h1>
+            <span class="subheading">Wassup?</span>
+          @else
             <h1>Hi!</h1>
-            <span class="subheading">Edge Layout Example</span>
+            <span class="subheading">Welkam tu mai blok</span>
+          @endif
           </div>
         </div>
       </div>
@@ -21,12 +26,16 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
+    
       @each(post in posts)
         <div class="post-preview">
           <a href="/post/{{ post._id }}">
             <h2 class="post-title">
               {{ post.title }}
             </h2>
+            <h3 class="post-subtitle">
+              {{ post.description }}
+            </h3>
           </a>
           <p class="post-meta">Posted by
           <a href="#"> {{post.username}} </a>
@@ -35,13 +44,29 @@
         </div>
         <hr>
       @endeach
+      
       <!-- Pager -->
+      @if(pages > 1 && current == 1)
       <div class="clearfix">
-        <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        <a class="btn btn-primary float-right" href="/p/{{ (current + 1) }}">Older Posts &rarr;</a>
       </div>
+      <hr>
+      @elseif(pages > 1 && current == pages)
+      <div class="clearfix">
+        <a class="btn btn-primary float-left" href="/p/{{ (current - 1) }}">&larr; Newer Posts</a>
+      </div>
+      <hr>
+      @elseif(pages > 1)
+      <div class="clearfix">
+        <a class="btn btn-primary float-left" href="/p/{{ (current - 1) }}">&larr; Newer Posts</a>
+        <a class="btn btn-primary float-right" href="/p/{{ (current + 1) }}">Older Posts &rarr;</a>
+      </div>
+      <hr>
+      @endif
+      
     </div>
   </div>
 </div>
  
-<hr>
+
 @endsection

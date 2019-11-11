@@ -1,5 +1,4 @@
 module.exports = (req, res) => {
-  res.render('register', {
-    errors: req.flash('registrationErrors')
-  });
-}
+  const title = "WeekyDay Blog | Register";
+  res.render("register", { errors: req.flash("registrationErrors"), title });
+};

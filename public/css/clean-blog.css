@@ -6,8 +6,12 @@
 
 body {
   font-size: 20px;
-  color: #212529;
+  background-color: #0F111A;
   font-family: 'Lora', 'Times New Roman', serif;
+}
+
+footer {
+  background-color: #0F111A;
 }
 
 p {
@@ -30,12 +34,12 @@ h6 {
 }
 
 a {
-  color: #212529;
+  color: #00010A;
   transition: all 0.2s;
 }
 
 a:focus, a:hover {
-  color: #0085A1;
+  color: #88C0D0;
 }
 
 blockquote {
@@ -47,6 +51,11 @@ blockquote {
   font-size: 36px;
   font-weight: 700;
   margin-top: 60px;
+}
+
+.post-content {
+  white-space: pre-line;
+  color: #E5E9F0;
 }
 
 .caption {
@@ -89,14 +98,14 @@ img::-moz-selection {
 
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
+  border-bottom: 1px solid #3A575C;
+  background-color: #0F111A;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #343a40;
+  color: #81A1C1;
 }
 
 #mainNav .navbar-toggler {
@@ -104,7 +113,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: #0F111A;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -112,6 +121,7 @@ img::-moz-selection {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #0F111A;
 }
 
 @media only screen and (min-width: 992px) {
@@ -121,17 +131,17 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: #fff;
+    color: #81A1C1;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #BF616A;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: #fff;
+    color: white;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #88C0D0;
   }
 }
 
@@ -147,20 +157,20 @@ img::-moz-selection {
     position: fixed;
     top: -67px;
     transition: transform 0.2s;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #81A1C1;
+    background-color: #81A1C1;
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #3A575C;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
+    color: #00010A;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
+    color: #0F111A;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
+    color: #00010A;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -171,7 +181,7 @@ img::-moz-selection {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #868e96;
+  background-color: #0F111A;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
@@ -183,7 +193,7 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #212529;
+  background-color: #3A575C;
   opacity: 0.5;
 }
 
@@ -267,10 +277,6 @@ header.masthead .post-heading .meta a {
   }
 }
 
-.post-preview > a {
-  color: #212529;
-}
-
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
   color: #0085A1;
@@ -280,28 +286,30 @@ header.masthead .post-heading .meta a {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
+  color: #3A575C;
 }
 
 .post-preview > a > .post-subtitle {
   font-weight: 300;
   margin: 0 0 10px;
+  color: #E5E9F0;
 }
 
 .post-preview > .post-meta {
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
-  color: #868e96;
+  color: #81A1C1;
 }
 
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #212529;
+  color: #3A575C;
 }
 
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: #0085A1;
+  color: #88C0D0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -378,6 +386,16 @@ footer .list-inline {
   padding: 0;
 }
 
+/**
+.fas {
+  color: #3A575C;
+}
+
+.fas:hover {
+  color: #88C0D0;
+}
+**/
+
 footer .copyright {
   font-size: 14px;
   margin-bottom: 0;
@@ -395,14 +413,15 @@ footer .copyright {
 }
 
 .btn-primary {
-  background-color: #0085A1;
-  border-color: #0085A1;
+  background-color: #81A1C1;
+  border-color: #81A1C1;
+  color: #0F111A;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #00657b !important;
-  border-color: #00657b !important;
+  background-color: #3B4252 !important;
+  border-color: #3B4252 !important;
 }
 
 .btn-lg {
