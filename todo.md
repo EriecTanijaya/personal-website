@@ -9,9 +9,13 @@ Rebrand buat minimalis
 
 [minifier css](https://cssminifier.com/)
 
+clean up css web
+
 footer blog redesign icon warna hover
 
-redesign colour blog theme!
+redesign colour blog theme! jadiin darkmode
+
+responsive css media itu itu belom di set
 
 buat account managament system, cek kalau ada email yang sama, \
 cek kalau ada username yang sama

@@ -6,12 +6,12 @@
 
 body {
   font-size: 20px;
-  background-color: #E5E9F0;
+  background-color: #0F111A;
   font-family: 'Lora', 'Times New Roman', serif;
 }
 
 footer {
-  background-color: #E5E9F0;
+  background-color: #0F111A;
 }
 
 p {
@@ -98,13 +98,13 @@ img::-moz-selection {
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #3A575C;
-  background-color: white;
+  background-color: #0F111A;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #3A575C;
+  color: #81A1C1;
 }
 
 #mainNav .navbar-toggler {
@@ -112,7 +112,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #3B4252;
+  color: #0F111A;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -130,7 +130,7 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: white;
+    color: #81A1C1;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #BF616A;
@@ -156,20 +156,20 @@ img::-moz-selection {
     position: fixed;
     top: -67px;
     transition: transform 0.2s;
-    border-bottom: 1px solid #E5E9F0;
-    background-color: white;
+    border-bottom: 1px solid #81A1C1;
+    background-color: #81A1C1;
   }
   #mainNav.is-fixed .navbar-brand {
     color: #3A575C;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #88C0D0;
+    color: #00010A;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #3A575C;
+    color: #0F111A;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #88C0D0;
+    color: #00010A;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -180,7 +180,7 @@ img::-moz-selection {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #3A575C;
+  background-color: #0F111A;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
@@ -192,7 +192,7 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #3B4252;
+  background-color: #3A575C;
   opacity: 0.5;
 }
 
@@ -291,19 +291,19 @@ header.masthead .post-heading .meta a {
 .post-preview > a > .post-subtitle {
   font-weight: 300;
   margin: 0 0 10px;
-  color: #00010A;
+  color: #E5E9F0;
 }
 
 .post-preview > .post-meta {
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
-  color: #3B4252;
+  color: #81A1C1;
 }
 
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #0F111A;
+  color: #3A575C;
 }
 
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
@@ -412,14 +412,15 @@ footer .copyright {
 }
 
 .btn-primary {
-  background-color: #0085A1;
-  border-color: #0085A1;
+  background-color: #81A1C1;
+  border-color: #81A1C1;
+  color: #0F111A;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #00657b !important;
-  border-color: #00657b !important;
+  background-color: #3B4252 !important;
+  border-color: #3B4252 !important;
 }
 
 .btn-lg {
