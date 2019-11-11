@@ -53,6 +53,10 @@ blockquote {
   margin-top: 60px;
 }
 
+.post-content {
+  white-space: pre-line;
+}
+
 .caption {
   font-size: 14px;
   font-style: italic;

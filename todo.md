@@ -5,11 +5,13 @@ Rebrand buat minimalis
 
 ~~buat pagination system~~
 
-https://blacksuan19.me/material-ocean
+[blacksuan ref material ocean](https://blacksuan19.me/material-ocean)
 
-https://cssminifier.com/
+[minifier css](https://cssminifier.com/)
 
-hover fas footer
+footer blog redesign icon warna hover
+
+redesign colour blog theme!
 
 buat account managament system, cek kalau ada email yang sama, \
 cek kalau ada username yang sama
