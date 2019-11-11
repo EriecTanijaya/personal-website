@@ -9,8 +9,13 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
+          @if(username)
+            <h1>Hi {{ username }} !</h1>
+            <span class="subheading">Wassup?</span>
+          @else
             <h1>Hi!</h1>
             <span class="subheading">Welkam tu mai blok</span>
+          @endif
           </div>
         </div>
       </div>
