@@ -25,7 +25,7 @@
 
 ~~redesign colour blog theme! jadiin darkmode~~
 
-Rebrand buat minimalis
+~~Rebrand buat minimalis~~
 
 ~~textarea derped still~~
 
@@ -35,3 +35,8 @@ buat account managament system, cek kalau ada email yang sama, \
 cek kalau ada username yang sama
 
 web ini buat pages baru utk khusus blog gmna?
+lalu ada pages untuk gallery doang
+
+post content punya gambar background, pas di upload ke glitch, di compress dulu
+
+
