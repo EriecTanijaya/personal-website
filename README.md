@@ -1,44 +1,37 @@
-How to format
-=================
+# Ma Personal Website
 
-- code style `yeah`
-- super bold header
+### messy af
 
-  super-bold
-  ==========
-  
-- bold header
-  
-  bold
-  ----
-  
-- Bold text **bald**
-- italic text *italick*
-- link text [gugel](https://google.com)
-- quoted text (double tab aja)
+# Features
+- user account register, login, logout
+- loginned user can create new post
+- user can delete own post
+- pagination system
+- DARK MODEE
 
-      estehmanis
-      
-### ← README.md
+### Reference
 
-formating yg baik dan benar
+[tutorial node js](https://vegibit.com/node-js-blog-tutorial/) to node js blog
 
-### ← index.html
+[blacksuan ref material ocean](https://blacksuan19.me/material-ocean)
 
-isi website
+[minifier css](https://cssminifier.com/)
 
-### ← style.css
+### Todo
 
-buat styleee
+~~bisa hapus post sendiri, tapi ga bisa hapus post orang lain~~
 
-### ← script.js
+~~buat pagination system~~
 
-js? y not
+~~redesign colour blog theme! jadiin darkmode~~
 
-### ← assets
+Rebrand buat minimalis
 
-taroh music, foto, video buat website
+textarea derped still
 
-    duh
+responsive css media itu itu belom di set (mobile)
 
-\ ゜o゜)ノ
+buat account managament system, cek kalau ada email yang sama, \
+cek kalau ada username yang sama
+
+web ini buat pages baru utk khusus blog gmna?
