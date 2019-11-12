@@ -37,6 +37,12 @@ cek kalau ada username yang sama
 web ini buat pages baru utk khusus blog gmna?
 lalu ada pages untuk gallery doang
 
+buat page about
+
+buat fitur search
+
+edit html untuk optimasi SEO
+
 storage glitch tipis, gambar upload dimana? atau buat limit file size?
 
 
