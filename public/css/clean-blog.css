@@ -256,7 +256,7 @@ header.masthead .post-heading .subheading {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header.masthead .post-heading .meta {
+header.masthead .post-heading .meta {/* cp */
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
