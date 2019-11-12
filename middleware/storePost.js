@@ -1,7 +1,6 @@
 module.exports = (req, res, next) => {
-  
   req.body.username = req.session.username;
-  
+
   if (
     !req.body.username ||
     !req.body.title ||
