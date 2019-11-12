@@ -29,7 +29,7 @@ Rebrand buat minimalis
 
 ~~textarea derped still~~
 
-responsive css media itu itu belom di set (mobile)
+~~responsive css media itu itu belom di set (mobile)~~
 
 buat account managament system, cek kalau ada email yang sama, \
 cek kalau ada username yang sama
