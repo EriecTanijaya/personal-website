@@ -11,14 +11,13 @@
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.1.2",
+    "edge.js": "^2.0.2",
     "express": "^4.17.1",
     "express-edge": "^2.0.1",
     "express-fileupload": "^1.1.5",
     "express-session": "^1.16.1",
     "mongoose": "^5.7.9",
-    "startbootstrap-clean-blog": "^5.0.8",
-    "edge.js": "^2.0.2",
-    "@adonisjs/ignitor": "^2.0.8"
+    "startbootstrap-clean-blog": "^5.0.8"
   },
   "engines": {
     "node": "8.x"

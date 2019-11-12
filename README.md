@@ -37,6 +37,7 @@ cek kalau ada username yang sama
 web ini buat pages baru utk khusus blog gmna?
 lalu ada pages untuk gallery doang
 
-post content punya gambar background, pas di upload ke glitch, di compress dulu
+storage glitch tipis, gambar upload dimana? atau buat limit file size?
+
 
 
