@@ -27,7 +27,7 @@
 
 Rebrand buat minimalis
 
-textarea derped still
+~~textarea derped still~~
 
 responsive css media itu itu belom di set (mobile)
 
