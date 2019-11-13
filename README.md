@@ -20,6 +20,8 @@
 
 [minifier css](https://cssminifier.com/)
 
+[animate.css](https://github.com/daneden/animate.css)
+
 [how to free up little space for glitch](https://support.glitch.com/t/running-out-of-disk-space/3009)
 
 [save image to db!!](https://stackoverflow.com/questions/29780733/store-an-image-in-mongodb-using-node-js-express-and-mongoose)
