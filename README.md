@@ -1,6 +1,6 @@
 # Ma Personal Website
 
-### messy af
+     messy af
 
 # Features
 - user account register, login, logout
@@ -9,41 +9,21 @@
 - pagination system
 - DARK MODEE
 
-### Reference
+# Milestone
+[my milestonee](https://github.com/EriecTanijaya/personal-website/blob/master/todo.md)
 
-[tutorial node js](https://vegibit.com/node-js-blog-tutorial/) to node js blog
+# Reference
 
-[blacksuan ref material ocean](https://blacksuan19.me/material-ocean)
+[node js blog tutorial](https://vegibit.com/node-js-blog-tutorial/)
+
+[blacksuan material ocean](https://blacksuan19.me/material-ocean)
 
 [minifier css](https://cssminifier.com/)
 
-### Todo
-
-~~bisa hapus post sendiri, tapi ga bisa hapus post orang lain~~
-
-~~buat pagination system~~
-
-~~redesign colour blog theme! jadiin darkmode~~
-
-~~Rebrand buat minimalis~~
-
-~~textarea derped still~~
-
-~~responsive css media itu itu belom di set (mobile)~~
-
-buat account managament system, cek kalau ada email yang sama, \
-cek kalau ada username yang sama
-
-web ini buat pages baru utk khusus blog gmna?
-lalu ada pages untuk gallery doang
-
-buat page about
-
-buat fitur search
-
-edit html untuk optimasi SEO
-
-storage glitch tipis, gambar upload dimana? atau buat limit file size?
+# How?
+- register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
+- Make the .env according to .env.example
+  - fill username, password, clustername
 
 
 

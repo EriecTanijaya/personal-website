@@ -88,8 +88,9 @@ app.get(["/p/:page", "/p"], pagingController);
 
 app.use(function(req, res, next) {
   res.status(404);
-  res.send('kemanaa cuk?'); //ganti ini sama res.render
   //buat controllerNotFound
+  const title = "WeekyDay Blog | Kosonk?!";
+  res.render("notFound", { title });
 });
 
 app.listen(4000, () => {
