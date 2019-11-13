@@ -3,7 +3,11 @@
 
 <!-- Page Header -->
 
-<header class="masthead" style="background-image: url('{{ post.image }}')">
+    @if(post.image == "noImage")
+    <header class="masthead">
+    @else
+    <header class="masthead" style="background-image: url('{{ post.image }}')">
+    @endif
 
     <div class="overlay"></div>
     <div class="container">

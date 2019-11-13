@@ -11,7 +11,9 @@ module.exports = async (req, res) => {
   }
 
   //delete img
-  if (post.image !== undefined) {
+  console.log('post', post);
+  //hacky hacky
+  if (post.image !== "noImage") {
     let path = "public" + post.image;
     console.log(path);
     fs.unlink(path, function(err) {
@@ -21,7 +23,7 @@ module.exports = async (req, res) => {
 
   Post.findByIdAndDelete(req.params.id, function(err) {
     if (err) console.log(err);
-    console.log("sukse delete " + post.title);
+    console.log("sukses delete " + post.title);
     res.redirect("/");
   });
 };
