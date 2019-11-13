@@ -19,7 +19,7 @@ cek kalau ada username yang sama~~
 
 animate website! cth: pas hover? pas welcome message kasih animasi juga
 
-use cdn utk assets kita
+~~use cdn utk assets kita~~
 
 web ini buat pages baru utk khusus blog gmna?
 lalu ada pages untuk gallery doang
