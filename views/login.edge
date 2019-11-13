@@ -17,17 +17,34 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
+        
+        @if(errors.length > 0)
+          <ul class="list-group">
+            @each(error in errors)
+            <li class="list-group-item list-group-item-danger mb-3 rounded-0">{{ error }}</li>
+            @endeach
+          </ul>
+        @endif
+        
+        @if(needRegister)
+        <form action="/auth/register" method="GET">
+          <div class="form-group my-4 text-center">
+            <button class="btn btn-primary">Register?</button>
+          </div>
+        </form>
+        @endif
+        
             <form action="/users/login" method="POST" encType="multipart/form-data">
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
                         <label>Email</label>
-                        <input type="email" name="email" placeholder="Email" class="form-control">
+                        <input type="email" name="email" placeholder="Email" class="form-control" required>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
                         <label>Password</label>
-                        <input type="password" name="password" placeholder="Password" class="form-control">
+                        <input type="password" name="password" placeholder="Password" class="form-control" required>
                     </div>
                 </div>
 

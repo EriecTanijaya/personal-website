@@ -3,6 +3,7 @@ const User = require("../database/models/User");
 
 module.exports = (req, res) => {
   const { email, password } = req.body;
+  const loginErrors = [];
   // try to find the user
   User.findOne(
     {
@@ -10,9 +11,11 @@ module.exports = (req, res) => {
     },
     (error, user) => {
       if (user) {
-        // compare passwords.
+        // sudah ketemu emailnya
+        // compare passwords. same or not
         bcrypt.compare(password, user.password, (error, same) => {
           if (same) {
+            //password di db sama dengan password user input
             // store user session.
             req.session.userId = user._id;
             req.session.username = user.username;
@@ -21,11 +24,20 @@ module.exports = (req, res) => {
               res.redirect("/");
             });
           } else {
+            //salah password
+            loginErrors.push("Sum ting wong in your password");
+            req.flash("loginErrors", loginErrors);
             res.redirect("/auth/login");
           }
         });
       } else {
-        return res.redirect("/auth/login");
+        //salah email
+        loginErrors.push("Sum ting wong in your email");
+        //TODO: kasih button register
+        // req.flash("loginErrors", loginErrors);
+        // return res.redirect("/auth/login");
+        const title = "WeekyDay Blog | Login";
+        return res.render("login", { needRegister: true, errors: loginErrors, title });
       }
     }
   );
