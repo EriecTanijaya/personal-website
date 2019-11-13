@@ -14,13 +14,17 @@
 
 ~~kasih tau error di setiap controller kalau ada error (pake connect-flash)~~
 
-buat account managament system, cek kalau ada email yang sama, \
-cek kalau ada username yang sama
+~~buat account managament system, cek kalau ada email yang sama,
+cek kalau ada username yang sama~~
 
 web ini buat pages baru utk khusus blog gmna?
 lalu ada pages untuk gallery doang
 
 buat page about
+
+buat most viewed post
+
+buat fitur comment di post
 
 buat fitur search
 
