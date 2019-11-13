@@ -88,7 +88,6 @@ app.get("/post/delete/:id", auth, deletePostController);
 
 app.use(function(req, res, next) {
   res.status(404);
-  //buat controllerNotFound
   const title = "WeekyDay Blog | Kosonk?!";
   res.render("notFound", { title });
 });
