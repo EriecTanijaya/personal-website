@@ -12,7 +12,7 @@
 
 ~~responsive css media itu itu belom di set (mobile)~~
 
-kasih tau error di setiap controller kalau ada error (pake connect-flash)
+~~kasih tau error di setiap controller kalau ada error (pake connect-flash)~~
 
 buat account managament system, cek kalau ada email yang sama, \
 cek kalau ada username yang sama

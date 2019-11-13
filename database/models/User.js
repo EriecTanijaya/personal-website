@@ -4,7 +4,8 @@ const mongoose = require("mongoose");
 const UserSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   email: {
     type: String,
@@ -17,6 +18,8 @@ const UserSchema = new mongoose.Schema({
   }
 });
 
+const UserModel = mongoose.model("User", UserSchema);
+
 UserSchema.pre("save", function(next) {
   const user = this;
 
@@ -26,6 +29,7 @@ UserSchema.pre("save", function(next) {
       next();
     });
   });
+  
 });
 
-module.exports = mongoose.model("User", UserSchema);
+module.exports = UserModel;
