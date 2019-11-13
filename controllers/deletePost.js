@@ -4,14 +4,16 @@ const fs = require("fs");
 module.exports = async (req, res) => {
   const post = await Post.findById(req.params.id);
   const auth = req.session.userId;
-  if (!post || !auth) {
-    //show error
-    //sementara redirect ke "/" dulu
-    return res.redirect("/");
+
+  if (!post) {
+    res.status(404);
+    const title = "WeekyDay Blog | Kosonk?!";
+    return res.render("notFound", { title });
   }
+  // return res.redirect("/");
 
   //delete img
-  console.log('post', post);
+  console.log("post", post);
   //hacky hacky
   if (post.image !== "noImage") {
     let path = "public" + post.image;
