@@ -1,5 +1,13 @@
 const Post = require("../database/models/Post");
 
+// const term = 'eriec';
+ 
+// Post.find({
+//   $text: { $search: term },
+// })
+//   .then(results => console.log(results))
+//   .catch(e => console.error(e));
+
 module.exports = (req, res, next) => {
   var perPage = 5;
   var page = req.params.page || 1;
