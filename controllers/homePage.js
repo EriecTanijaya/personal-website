@@ -12,7 +12,6 @@ module.exports = (req, res, next) => {
       Post.countDocuments().exec(function(err, count) {
         if (err) return next(err);
         res.render("index", {
-          errors: req.flash("searchErrors"),
           posts: posts,
           current: page,
           pages: Math.ceil(count / perPage),
