@@ -256,7 +256,8 @@ header.masthead .post-heading .subheading {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header.masthead .post-heading .meta {/* cp */
+header.masthead .post-heading .meta {
+  /* cp */
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
@@ -459,4 +460,24 @@ footer .copyright {
     border-radius: 0;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
+}
+
+.raise {
+  background-color: #00010A;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: inset 0 -0.6em 0 -0.35em #81A1C1;
+  transform: scale(1.03);
+  transition: 0.25s;
+}
+
+.raise:active {
+  box-shadow: none;
+  top: 0.1em;
+  transform: scale(0.98);
 }
