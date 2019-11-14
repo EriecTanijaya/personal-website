@@ -7,6 +7,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
+            
+            @if(errors.length > 0)
+            <ul class="list-group">
+                @each(error in errors)
+                <li class="list-group-item list-group-item-danger mb-3 rounded-0">{{ error }}</li>
+                @endeach
+            </ul>
+            @endif
+            
                 <div class="site-heading animated pulse">
                     @if(username)
                     <h1>Hi {{ username }}!</h1>

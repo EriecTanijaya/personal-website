@@ -1,13 +1,5 @@
 const Post = require("../database/models/Post");
 
-// const term = 'eriec';
- 
-// Post.find({
-//   $text: { $search: term },
-// })
-//   .then(results => console.log(results))
-//   .catch(e => console.error(e));
-
 module.exports = (req, res, next) => {
   var perPage = 5;
   var page = req.params.page || 1;
@@ -20,6 +12,7 @@ module.exports = (req, res, next) => {
       Post.countDocuments().exec(function(err, count) {
         if (err) return next(err);
         res.render("index", {
+          errors: req.flash("searchErrors"),
           posts: posts,
           current: page,
           pages: Math.ceil(count / perPage),

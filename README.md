@@ -28,6 +28,8 @@
 
 [save image to db!!](https://stackoverflow.com/questions/29780733/store-an-image-in-mongodb-using-node-js-express-and-mongoose)
 
+[Search feature](https://www.compose.com/articles/full-text-search-with-mongodb-and-node-js/)
+
 # How?
 - register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
 - Make the .env according to .env.example

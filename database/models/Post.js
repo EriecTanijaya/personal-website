@@ -12,19 +12,22 @@ const PostSchema = new mongoose.Schema({
   }
 });
 
-PostSchema.index({
-  title: 'text',
-  description: 'text',
-  content: 'text',
-  username: 'text'
-}, {
-  weights: {
-    title: 5,
-    description: 3,
-    content: 2,
-    username: 1
+PostSchema.index(
+  {
+    title: "text",
+    description: "text",
+    content: "text",
+    username: "text"
   },
-});
+  {
+    weights: {
+      title: 5,
+      description: 3,
+      content: 2,
+      username: 1
+    }
+  }
+);
 
 const Post = mongoose.model("Post", PostSchema);
 
