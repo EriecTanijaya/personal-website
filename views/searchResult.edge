@@ -15,8 +15,14 @@
                     @else
                     <h1>Meh</h1>
                     <span class="subheading">"{{ search.input }}" not found in this website</span>
+                    <form action="/search" method="GET">
+                      <div class="form-group my-4 text-center">
+                        <button class="btn btn-primary">Search egen</button>
+                      </div>
+                    </form>
                     @endif
                 </div>
+                
                 
             </div>
         </div>
