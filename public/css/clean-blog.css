@@ -486,37 +486,30 @@ footer .copyright {
 
 /* search bar */
 
-.search-bar {
-  width: 100%;
-  position: relative;
-  display: flex;
+form input[type="search"] {
+  border: solid 3px #fff;
+  box-sizing: border-box;
+  font-size: 2em;
+  height: 2em;
+  outline: solid #0F111A 0;
+  transition: all 2s ease-in;
+  width: 30vw;
+  z-index: 1;
 }
 
-.search-input {
-  width: 100%;
-/*   border: 3px solid #00B4CC; */
-  border: none;
-  border-right: none;
-  padding: 5px;
-  height: 36px;
-/*   border-radius: 5px 0 0 5px; */
-  outline: none;
-  color: #00010A;
+@media only screen and (max-width: 768px) {
+  form input[type="search"] {
+    width: 60vw;
+  }
 }
 
-/* .search-input:focus{
-  color: #00010A;
-} */
 
-.search-button {
-  width: 40px;
-  height: 36px;
-/*   border: 1px solid #00B4CC; */
-  border: none;
-  background: #0F111A;
-  text-align: center;
-  color: #fff;
-/*   border-radius: 0 5px 5px 0; */
-  cursor: pointer;
-  font-size: 20px;
+form input[type="search"]::-webkit-search-cancel-button{
+    position:relative;
+    right:20px;    
+}
+
+form input[type="search"]:focus {
+  border: solid 3px #81A1C1;
+  outline: solid #0F111A 2000px;
 }
