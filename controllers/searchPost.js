@@ -1,11 +1,15 @@
 const Post = require("../database/models/Post");
 
 module.exports = (req, res, next) => {
-  var perPage = 5;
-  var page = req.query.page || 1;
   var title = "WeekyDay Blog | Search";
   var input = req.query.input;
-  console.log("searchPost query", req.query)
+
+  if (input === "") {
+    return res.redirect("/search");
+  }
+
+  var perPage = 5;
+  var page = req.query.page || 1;
   var found = false;
   Post.find({
     $text: { $search: input }
@@ -15,7 +19,7 @@ module.exports = (req, res, next) => {
     .limit(perPage)
     .exec(function(err, posts) {
       console.log(posts);
-      if (posts.length !== 0){
+      if (posts.length !== 0) {
         found = true;
       }
       Post.countDocuments({
