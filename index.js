@@ -19,6 +19,8 @@ const loginUserController = require("./controllers/loginUser");
 const logoutController = require("./controllers/logout");
 const deletePostController = require("./controllers/deletePost");
 const pagingController = require("./controllers/paging");
+const searchController = require("./controllers/search");
+const searchPostController = require("./controllers/searchPost");
 
 const app = new express();
 
@@ -71,24 +73,26 @@ app.use(
 const storePost = require("./middleware/storePost");
 const auth = require("./middleware/auth");
 const redirectIfAuthenticated = require("./middleware/redirectIfAuthenticated");
+const checkId = require("./middleware/checkId");
 
 app.use("/posts/store", storePost);
 
 app.get("/", homePageController);
-app.get("/post/:id", getPostController);
+app.get(["/p/:page", "/p"], pagingController);
 app.get("/posts/new", auth, createPostController);
 app.post("/posts/store", auth, storePost, storePostController);
+app.get("/post/:id", checkId, getPostController);
 app.get("/auth/register", redirectIfAuthenticated, createUserController);
 app.get("/auth/login", redirectIfAuthenticated, loginController);
 app.get("/auth/logout", logoutController);
 app.post("/users/login", redirectIfAuthenticated, loginUserController);
 app.post("/users/register", redirectIfAuthenticated, storeUserController);
-app.get("/post/delete/:id", auth, deletePostController);
-app.get(["/p/:page", "/p"], pagingController);
+app.get("/post/delete/:id", auth, checkId, deletePostController);
+app.get("/search", searchController);
+app.get("/search/post", searchPostController);
 
 app.use(function(req, res, next) {
   res.status(404);
-  //buat controllerNotFound
   const title = "WeekyDay Blog | Kosonk?!";
   res.render("notFound", { title });
 });

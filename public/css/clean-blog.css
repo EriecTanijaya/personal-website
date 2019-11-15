@@ -93,7 +93,7 @@ img::-moz-selection {
 
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid #3A575C;
+  border-bottom: 1px solid #0F111A;
   background-color: #0F111A;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -256,7 +256,8 @@ header.masthead .post-heading .subheading {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header.masthead .post-heading .meta {/* cp */
+header.masthead .post-heading .meta {
+  /* cp */
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
@@ -459,4 +460,56 @@ footer .copyright {
     border-radius: 0;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
+}
+
+/* post-content animation */
+
+.raise {
+  background-color: #00010A;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: inset 0 -0.6em 0 -0.35em #81A1C1;
+  transform: scale(1.03);
+  transition: 0.25s;
+}
+
+.raise:active {
+  box-shadow: none;
+  top: 0.1em;
+  transform: scale(0.98);
+}
+
+/* search bar */
+
+form input[type="search"] {
+  border: solid 3px #fff;
+  box-sizing: border-box;
+  font-size: 2em;
+  height: 2em;
+  outline: solid #0F111A 0;
+  transition: all 2s ease-in;
+  width: 30vw;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  form input[type="search"] {
+    width: 60vw;
+  }
+}
+
+
+form input[type="search"]::-webkit-search-cancel-button{
+    position:relative;
+    right:20px;    
+}
+
+form input[type="search"]:focus {
+  border: solid 3px #81A1C1;
+  outline: solid #0F111A 2000px;
 }

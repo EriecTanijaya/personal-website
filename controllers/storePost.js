@@ -20,7 +20,8 @@ module.exports = (req, res) => {
     );
   } else {
     Post.create(
-      { ...req.body, image: `/img/post-sample-image.jpg` },
+      //hacky hacky
+      { ...req.body, image: "noImage"},
       (error, post) => {
         res.redirect("/");
       }
