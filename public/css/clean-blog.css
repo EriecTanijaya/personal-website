@@ -503,13 +503,15 @@ form input[type="search"] {
   }
 }
 
-
 form input[type="search"]::-webkit-search-cancel-button{
     position:relative;
     right:20px;    
 }
 
-form input[type="search"]:focus {
+form input[type="search"]:focus,
+form input[type="search"]:active {
   border: solid 3px #81A1C1;
-  outline: solid #0F111A 2000px;
+  outline: solid #3A575C 2000px;
+  color: #E5E9F0;
+  background-color: #0F111A;
 }

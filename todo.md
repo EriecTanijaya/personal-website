@@ -21,6 +21,8 @@ cek kalau ada username yang sama~~
 
 ~~use cdn utk assets kita~~
 
+ganti font website
+
 besarin sikit logo menu (mobile)
 
 kasih animate pulse di header pada semua page
