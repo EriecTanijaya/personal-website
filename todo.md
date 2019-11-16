@@ -30,7 +30,7 @@ buat most viewed post
 
 buat fitur comment di post
 
-buat fitur search pake new page
+~~buat fitur search pake new page~~
 
 edit html untuk optimasi SEO
 

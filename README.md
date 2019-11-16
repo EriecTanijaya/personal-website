@@ -8,6 +8,7 @@
 - user can delete own post
 - pagination system
 - DARK MODEE
+- search feature
 
 # Milestone
 [my milestonee](https://github.com/EriecTanijaya/personal-website/blob/master/todo.md)
