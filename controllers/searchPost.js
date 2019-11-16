@@ -3,7 +3,7 @@ const Post = require("../database/models/Post");
 module.exports = (req, res, next) => {
   var title = "WeekyDay Blog | Search";
   var input = req.query.input;
-
+  
   if (input === "") {
     return res.redirect("/search");
   }
