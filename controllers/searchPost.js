@@ -18,7 +18,6 @@ module.exports = (req, res, next) => {
     .skip(perPage * page - perPage)
     .limit(perPage)
     .exec(function(err, posts) {
-      console.log(posts);
       if (posts.length !== 0) {
         found = true;
       }

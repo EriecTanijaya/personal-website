@@ -21,17 +21,39 @@ cek kalau ada username yang sama~~
 
 ~~use cdn utk assets kita~~
 
+besarin sikit logo menu (mobile)
+
+kasih animate pulse di header pada semua page
+
+pas di page login, waktu email tak ada ditemukan
+ganti button register pake text "if youre new ..." (kek di index.edge)
+
+fitur share post
+
+fitur edit post
+
+pas post di hover, title postnya ganti warna (yg raise post itu)
+
+buat button untuk ke top of the page
+
+ganti scroll punya design(custom sendiri)
+
+kasih credit di setiap file (startbootstrap, stackoverflow, etc)
+
 web ini buat pages baru utk khusus blog gmna?
 lalu ada pages untuk gallery doang
 
 buat page about
+isinya ada juga repo github web ini
 
 buat most viewed post
 
 buat fitur comment di post
 
-buat fitur search pake new page
+~~buat fitur search pake new page~~
 
 edit html untuk optimasi SEO
 
 storage glitch tipis, gambar upload dimana? atau buat limit file size?
+
+semua ide diatas, buat issue di repo kamu
