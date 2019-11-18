@@ -2,7 +2,7 @@
 
      messy af
 
-# Features
+## Features
 - user account register, login, logout
 - loginned user can create new post
 - user can delete own post
@@ -10,23 +10,36 @@
 - DARK MODEE
 - search feature
 
-# How?
+## How?
 - register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
 - Make the .env according to .env.example
   - fill username, password, clustername
   
 
-# Thanks to
+## Thanks to
 
-[node js blog tutorial](https://vegibit.com/node-js-blog-tutorial/)
+[node js blog tutorial](https://vegibit.com/node-js-blog-tutorial/) for nodejs blog tutorial
 
-[blacksuan material ocean](https://blacksuan19.me/material-ocean)
+[startbootstrap clean blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog) for website theme
 
-[minifier css](https://cssminifier.com/)
+[blacksuan material ocean](https://blacksuan19.me/material-ocean) for color in this website
 
-[animate.css](https://github.com/daneden/animate.css)
+[minifier css](https://cssminifier.com/) for minifying my css files
 
-[how to free up little space for glitch](https://support.glitch.com/t/running-out-of-disk-space/3009)
+[animate.css](https://github.com/daneden/animate.css) for some animation
+
+[stackoverflow](https://stackoverflow.com/), [codepen.io](https://codepen.io/) for code debug and test
+
+
+## Note
+
+- when the glitch memory is full,
+
+      git gc
+      git prune
+      rm -rf .git
+
+  source: [how to free up little space for glitch](https://support.glitch.com/t/running-out-of-disk-space/3009)
 
 
 
