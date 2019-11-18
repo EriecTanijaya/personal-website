@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="page-heading">
+                <div class="page-heading animated pulse">
                     <h1>Login</h1>
                 </div>
             </div>
@@ -27,11 +27,7 @@
         @endif
         
         @if(needRegister)
-        <form action="/auth/register" method="GET">
-          <div class="form-group my-4 text-center">
-            <button class="btn btn-primary">Register?</button>
-          </div>
-        </form>
+        <span class="subheading text-light">if you are new, you can <strong><a class="text-light" href="/auth/register">register</a></strong></span> 
         @endif
         
             <form action="/users/login" method="POST" encType="multipart/form-data">
