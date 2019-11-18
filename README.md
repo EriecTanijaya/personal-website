@@ -10,10 +10,13 @@
 - DARK MODEE
 - search feature
 
-# Milestone
-[my milestonee](https://github.com/EriecTanijaya/personal-website/blob/master/todo.md)
+# How?
+- register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
+- Make the .env according to .env.example
+  - fill username, password, clustername
+  
 
-# Reference
+# Thanks to
 
 [node js blog tutorial](https://vegibit.com/node-js-blog-tutorial/)
 
@@ -24,11 +27,6 @@
 [animate.css](https://github.com/daneden/animate.css)
 
 [how to free up little space for glitch](https://support.glitch.com/t/running-out-of-disk-space/3009)
-
-# How?
-- register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
-- Make the .env according to .env.example
-  - fill username, password, clustername
 
 
 
