@@ -8,6 +8,7 @@ const expressSession = require("express-session");
 const connectMongo = require("connect-mongo");
 const connectFlash = require("connect-flash");
 
+//TODO: susun ini buat rapi
 const createPostController = require("./controllers/createPost");
 const homePageController = require("./controllers/homePage");
 const storePostController = require("./controllers/storePost");
@@ -21,6 +22,7 @@ const deletePostController = require("./controllers/deletePost");
 const pagingController = require("./controllers/paging");
 const searchController = require("./controllers/search");
 const searchPostController = require("./controllers/searchPost");
+const aboutController = require("./controllers/about");
 
 const app = new express();
 
@@ -88,6 +90,7 @@ const checkId = require("./middleware/checkId");
 
 app.use("/posts/store", storePost);
 
+//TODO: susun routing biar rapi
 app.get("/", homePageController);
 app.get(["/p/:page", "/p"], pagingController);
 app.get("/posts/new", auth, createPostController);
@@ -101,6 +104,7 @@ app.post("/users/register", redirectIfAuthenticated, storeUserController);
 app.get("/post/delete/:id", auth, checkId, deletePostController);
 app.get("/search", searchController);
 app.get("/search/post", searchPostController);
+app.get("/about", aboutController);
 
 app.use(function(req, res, next) {
   res.status(404);
