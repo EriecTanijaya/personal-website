@@ -1,6 +1,6 @@
 {
   "name": "webssie",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "ma personal website",
   "main": "index.js",
   "scripts": {

@@ -24,16 +24,16 @@ const searchPostController = require("./controllers/searchPost");
 
 const app = new express();
 
-function checkHttps(req, res, next){
+function checkHttps(req, res, next) {
   // protocol check, if http, redirect to https
-  if(req.get('X-Forwarded-Proto').indexOf("https")!=-1){
-    return next()
+  if (req.get("X-Forwarded-Proto").indexOf("https") != -1) {
+    return next();
   } else {
-    res.redirect('https://' + req.hostname + req.url);
+    res.redirect("https://" + req.hostname + req.url);
   }
 }
 
-app.all('*', checkHttps);
+app.all("*", checkHttps);
 
 app.use(
   expressSession({
