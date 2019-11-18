@@ -515,3 +515,13 @@ form input[type="search"]:active {
   color: #E5E9F0;
   background-color: #0F111A;
 }
+
+/* post-title hover effect if raise hovered */
+
+.raise:hover .post-title {
+  color: #88C0D0;
+}
+
+.raise:active .post-title {
+  color: #A3BE8C;
+}
