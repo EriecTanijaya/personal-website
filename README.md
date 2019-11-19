@@ -44,6 +44,18 @@
       rm -rf .git
 
   source: [how to free up little space for glitch](https://support.glitch.com/t/running-out-of-disk-space/3009)
+  
+- register your site to google search console
+  there is many way, but this method is easy to do
 
+    - check in folder views > layout > app.edge
+    - on the line 6, there is
+  
+          <meta name="google-site-verification" content="l9ku77J9I_e0gC9Qwd9ZPJ_OeUWotXVGI21tlVVn104" />
+          
+    - you need change that line with provided meta from google search console
+    - you will get that meta when you register
+
+  source: [google search console](https://search.google.com/search-console)
 
 
