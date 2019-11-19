@@ -16,7 +16,8 @@
     "express-edge": "^2.0.1",
     "express-fileupload": "^1.1.5",
     "express-session": "^1.16.1",
-    "mongoose": "^5.7.11"
+    "mongoose": "^5.7.11",
+    "sitemap": "^5.1.0"
   },
   "engines": {
     "node": "8.x"
