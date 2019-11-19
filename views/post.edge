@@ -2,12 +2,7 @@
 @section('content')
 
 <!-- Page Header -->
-
-    @if(post.image == "noImage")
     <header class="masthead">
-    @else
-    <header class="masthead" style="background-image: url('{{ post.image }}')">
-    @endif
 
     <div class="overlay"></div>
     <div class="container">
@@ -30,6 +25,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto post-content">
+              @if(post.image != "noImage")
+              <img src={{ post.image }} style="width: 100%" alt={{ post.description }}>
+              @endif
                 {{ post.content }}
             </div>
         </div>
