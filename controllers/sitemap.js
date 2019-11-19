@@ -7,8 +7,13 @@ module.exports = (req, res) => {
     .filter(r => r != null);
   // parse each routes in an array of array containing all the possible params rotations
   const realRoutes = parseRoutes(routes);
+  
   // filter out null values and flatten the array
   const flattened = flattenArray(realRoutes);
+  
+  //hack to remove * at route
+  flattened.shift();
+  
   // insert it into our XML
   const sitemapOutput = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -48,6 +53,7 @@ function parseRoutes(routes) {
       /(:[a-z]+)?(\(([a-z0-9-]+\|?)+\))+/gi,
       `$2`
     );
+    
     const acceptedValues = parsePattern(subPattern);
     return acceptedValues;
   });
