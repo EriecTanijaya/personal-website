@@ -5,8 +5,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    <meta name="keywords" content="blog, curhat, meme, nodejs, open source, javascript">
+    
+    @if(post)
+    <meta name="description" content="{{ post.description }}">
+    <meta name="author" content="{{ post.username }}">
+    @else
+    <meta name="description" content="personal blog for everday meme and depression cure">
+    <meta name="author" content="Eriec Tan">
+    @endif
 
     <title>{{title}}</title>
 
@@ -80,25 +88,25 @@
                         <li class="list-inline-item">
                             <a href="https://instagram.com/EriecTan" target="_blank">
                                 <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
+                                  <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://twitter.com/EriecTan88" target="_blank">
                                 <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
+                                  <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://github.com/EriecTanijaya/" target="_blank">
                                 <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
+                                  <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
                             </a>
                         </li>
                     </ul>
