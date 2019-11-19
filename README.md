@@ -9,6 +9,7 @@
 - pagination system
 - DARK MODEE
 - search feature
+- sitemap system
 
 ## How?
 - register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
