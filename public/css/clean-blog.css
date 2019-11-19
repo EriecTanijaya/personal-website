@@ -1,7 +1,31 @@
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2FSpaceGrotesk-Regular.woff2?v=1574065795186")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2FSpaceGrotesk-Bold.woff2?v=1574065781691")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2FSpaceGrotesk-Medium.woff2?v=1574067892851")
+    format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
   font-size: 20px;
   background-color: #0F111A;
-  font-family: "Lora", "Times New Roman", serif;
+  font-family: "Space Mono", "Times New Roman", serif;
 }
 
 footer {
@@ -24,7 +48,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SpaceGrotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -95,7 +119,7 @@ img::-moz-selection {
   position: absolute;
   border-bottom: 1px solid #0F111A;
   background-color: #0F111A;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SpaceGrotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -229,7 +253,7 @@ header.masthead .site-heading .subheading {
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SpaceGrotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -253,7 +277,7 @@ header.masthead .post-heading .subheading {
   font-size: 24px;
   font-weight: 600;
   margin: 10px 0 30px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SpaceGrotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 header.masthead .post-heading .meta {
@@ -261,7 +285,7 @@ header.masthead .post-heading .meta {
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
-  font-family: "Lora", "Times New Roman", serif;
+  font-family: "Space Mono", "Times New Roman", serif;
 }
 
 header.masthead .post-heading .meta a {
@@ -341,7 +365,7 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: #E5E9F0;
   -webkit-box-shadow: none;
   transition: background-color 5000s ease-in-out 0s;
-  font-family: "Lora", "Times New Roman", serif;
+  font-family: "Space Mono", "Times New Roman", serif;
 }
 
 .floating-label-form-group input,
@@ -357,7 +381,7 @@ select:-webkit-autofill:focus {
   color: #E5E9F0 !important;
   background-color: #0F111A;
   box-shadow: none !important;
-  font-family: "Lora", "Times New Roman", serif;
+  font-family: "Space Mono", "Times New Roman", serif;
 }
 
 .floating-label-form-group input:focus {
@@ -372,7 +396,7 @@ select:-webkit-autofill:focus {
 .floating-label-form-group textarea::-webkit-input-placeholder {
   background-color: #0F111A;
   color: #88C0D0;
-  font-family: "Lora", "Times New Roman", serif;
+  font-family: "Space Mono", "Times New Roman", serif;
 }
 
 .floating-label-form-group label {
@@ -428,7 +452,7 @@ footer .copyright {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SpaceGrotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {
@@ -458,7 +482,7 @@ footer .copyright {
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "SpaceGrotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
 
@@ -503,9 +527,9 @@ form input[type="search"] {
   }
 }
 
-form input[type="search"]::-webkit-search-cancel-button{
-    position:relative;
-    right:20px;    
+form input[type="search"]::-webkit-search-cancel-button {
+  position: relative;
+  right: 20px;
 }
 
 form input[type="search"]:focus,
