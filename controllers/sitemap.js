@@ -12,6 +12,10 @@ module.exports = (req, res) => {
   const flattened = flattenArray(realRoutes);
   
   //hack to remove * at route
+  //at index.js we have 
+  //app.all("*", checkHttps);
+  //so its count on "*"
+  
   flattened.shift();
   
   // insert it into our XML
