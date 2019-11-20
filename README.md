@@ -4,6 +4,7 @@
 
 ## Features
 - user account register, login, logout
+- user password is encrypted
 - loginned user can create new post
 - user can delete own post
 - pagination system
@@ -37,6 +38,8 @@
 [sitemap](https://www.lazee.xyz/blog/express-sitemap-case-study/) sitemap tuts
 
 [sharp](https://github.com/lovell/sharp) for image saving and converter
+
+[bcrypt](https://github.com/dcodeIO/bcrypt.js) for password encryption
 
 
 ## Note
