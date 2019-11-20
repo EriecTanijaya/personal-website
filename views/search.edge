@@ -8,24 +8,17 @@
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="page-heading animated pulse">
                     <h1>Search</h1>
+                    <hr>	
+                    <form action="/search/post" method="GET">	
+                      <input type="search" name="input" placeholder="psst.. here..">	
+                      <div class="form-group my-4 text-center">	
+                        <button class="btn btn-primary">Search</button>	
+                      </div>	
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto text-center">
-          <form action="/search/post" method="GET">
-            <input type="search" name="input" placeholder="psst.. here..">
-            <div class="form-group my-4 text-center">
-              <button class="btn btn-primary">Search</button>
-            </div>
-          </form>
-        </div>
-    </div>
-</div>
 
 @endsection
