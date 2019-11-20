@@ -124,7 +124,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #BF616A;
+  color: white;
 }
 
 #mainNav .navbar-toggler {
@@ -132,7 +132,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #81A1C1;
+  color: #88C0D0;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -140,7 +140,7 @@ img::-moz-selection {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #E5E9F0;
+  color: white;
 }
 
 @media only screen and (min-width: 992px) {
@@ -456,9 +456,9 @@ footer .copyright {
 }
 
 .btn-primary {
-  background-color: #3A575C;
-  border-color: #3A575C;
-  color: #E5E9F0;
+  background-color: #0F111A;
+  border-color: #0F111A;
+  color: white;
 }
 
 .btn-primary:hover,

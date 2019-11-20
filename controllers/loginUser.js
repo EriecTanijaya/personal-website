@@ -33,9 +33,6 @@ module.exports = (req, res) => {
       } else {
         //salah email
         loginErrors.push("Sum ting wong in your email");
-        //TODO: kasih button register
-        // req.flash("loginErrors", loginErrors);
-        // return res.redirect("/auth/login");
         const title = "WeekyDay Blog | Login";
         return res.render("login", { needRegister: true, errors: loginErrors, title });
       }
