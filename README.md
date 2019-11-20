@@ -36,7 +36,7 @@
 
 [sitemap](https://www.lazee.xyz/blog/express-sitemap-case-study/) sitemap tuts
 
-[sharp](https://github.com/lovell/sharp)
+[sharp](https://github.com/lovell/sharp) for image saving and converter
 
 
 ## Note
