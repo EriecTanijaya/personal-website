@@ -24,7 +24,7 @@
 
 body {
   font-size: 20px;
-  background-color: #0F111A;
+  background-color: #00010A;
   font-family: "Space Mono", "Times New Roman", serif;
 }
 
@@ -150,15 +150,15 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
-    color: #81A1C1;
+    color: #00010A;
   }
   #mainNav .navbar-brand:focus,
   #mainNav .navbar-brand:hover {
-    color: #BF616A;
+    color: #88C0D0;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: white;
+    color: #00010A;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus,
   #mainNav .navbar-nav > li.nav-item > a:hover {
@@ -178,22 +178,22 @@ img::-moz-selection {
     position: fixed;
     top: -67px;
     transition: transform 0.2s;
-    border-bottom: 1px solid #81A1C1;
-    background-color: #81A1C1;
+    border-bottom: 1px solid #3A575C;
+    background-color: #0F111A;
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #3A575C;
+    color: white;
   }
   #mainNav.is-fixed .navbar-brand:focus,
   #mainNav.is-fixed .navbar-brand:hover {
-    color: #00010A;
+    color: #88C0D0;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #0F111A;
+    color: white;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus,
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #00010A;
+    color: #88C0D0;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -217,7 +217,7 @@ header.masthead .overlay {
   height: 100%;
   width: 100%;
   background-color: #3A575C;
-  opacity: 0.5;
+/*   opacity: 0.5; */
 }
 
 header.masthead .page-heading,
@@ -379,22 +379,22 @@ select:-webkit-autofill:focus {
   border-radius: 0;
   /*   background: none; */
   color: #E5E9F0 !important;
-  background-color: #0F111A;
+  background-color: #00010A;
   box-shadow: none !important;
   font-family: "Space Mono", "Times New Roman", serif;
 }
 
 .floating-label-form-group input:focus {
-  background-color: #0F111A;
+  background-color: #00010A;
 }
 
 .floating-label-form-group textarea:focus {
-  background-color: #0F111A;
+  background-color: #00010A;
 }
 
 .floating-label-form-group input::-webkit-input-placeholder,
 .floating-label-form-group textarea::-webkit-input-placeholder {
-  background-color: #0F111A;
+  background-color: #00010A;
   color: #88C0D0;
   font-family: "Space Mono", "Times New Roman", serif;
 }
@@ -456,17 +456,17 @@ footer .copyright {
 }
 
 .btn-primary {
-  background-color: #81A1C1;
-  border-color: #81A1C1;
-  color: #0F111A;
+  background-color: #3A575C;
+  border-color: #3A575C;
+  color: #E5E9F0;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  color: #fff;
-  background-color: #3B4252 !important;
-  border-color: #3B4252 !important;
+  color: #0F111A;
+  background-color: #88C0D0 !important;
+  border-color: #88C0D0!important;
 }
 
 .btn-lg {
@@ -489,7 +489,7 @@ footer .copyright {
 /* post-content animation */
 
 .raise {
-  background-color: #00010A;
+  background-color: #0F111A;
   padding: 15px;
   cursor: pointer;
   transition: all 0.3s;
@@ -535,17 +535,14 @@ form input[type="search"]::-webkit-search-cancel-button {
 form input[type="search"]:focus,
 form input[type="search"]:active {
   border: solid 3px #81A1C1;
-  outline: solid #3A575C 2000px;
+  outline: solid #E5E9F0 2000px;
   color: #E5E9F0;
   background-color: #0F111A;
 }
 
 /* post-title hover effect if raise hovered */
 
-.raise:hover .post-title {
-  color: #88C0D0;
-}
-
+.raise:hover .post-title,
 .raise:active .post-title {
-  color: #A3BE8C;
+  color: #88C0D0;
 }
