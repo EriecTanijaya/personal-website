@@ -10,6 +10,8 @@
 - DARK MODEE
 - search feature
 - sitemap system
+- storing image to webp format (better format for web)
+
 
 ## How?
 - register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
@@ -33,6 +35,8 @@
 [stackoverflow](https://stackoverflow.com/), [codepen.io](https://codepen.io/) for code debug and test
 
 [sitemap](https://www.lazee.xyz/blog/express-sitemap-case-study/) sitemap tuts
+
+[sharp](https://github.com/lovell/sharp)
 
 
 ## Note
