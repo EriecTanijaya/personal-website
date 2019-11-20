@@ -9,7 +9,9 @@ module.exports = (req, res) => {
         if (error.errmsg.includes('username')){
           registrationErrors.push("Username has already been taken");
         } else if (error.errmsg.includes('email')){
-          registrationErrors.push("Email has already been taken");
+          registrationErrors.push("Email has already been registered");
+          const title = "WeekyDay Blog | Register";
+          return res.render("register", { registered: true, errors: registrationErrors, title });
         } else {
           registrationErrors.push("Unknown error");
         }
