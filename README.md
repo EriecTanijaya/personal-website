@@ -8,10 +8,10 @@
 - loginned user can create new post
 - user can delete own post
 - pagination system
-- DARK MODEE
 - search feature
 - sitemap system
 - storing image to webp format (better format for web)
+- theme toggler (can switch to dark mode!)
 
 
 ## How?
