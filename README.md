@@ -1,5 +1,14 @@
 # Ma Personal Website
 
+<p style="text-align: center;">
+![commit activity](https://img.shields.io/github/commit-activity/m/EriecTanijaya/personal-website?style=for-the-badge)
+![last commit](https://img.shields.io/github/last-commit/EriecTanijaya/personal-website.svg?style=for-the-badge)
+![version](https://img.shields.io/badge/dynamic/json?color=blue&label=version&style=for-the-badge&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FEriecTanijaya%2Fpersonal-website%2Fmaster%2Fpackage.json)
+![stars](https://img.shields.io/github/stars/EriecTanijaya/personal-website?style=for-the-badge)
+![open issues](https://img.shields.io/github/issues/EriecTanijaya/personal-website?style=for-the-badge)
+![license](https://img.shields.io/github/license/EriecTanijaya/personal-website?style=for-the-badge)
+</p>
+
      messy af
 
 ## Features
@@ -53,23 +62,27 @@
 
 ## Thanks to
 
-[node js blog tutorial](https://vegibit.com/node-js-blog-tutorial/) for nodejs blog tutorial
+- [node js blog tutorial](https://vegibit.com/node-js-blog-tutorial/) for nodejs blog tutorial
 
-[startbootstrap clean blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog) for website theme
+- [express](https://github.com/expressjs/express) for web framework
 
-[blacksuan material ocean](https://blacksuan19.me/material-ocean) for color in this website
+- [edge](https://github.com/edge-js/edge) for template engine
 
-[minifier css](https://cssminifier.com/) for minifying my css files
+- [startbootstrap clean blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog) for website theme
 
-[animate.css](https://github.com/daneden/animate.css) for some animation
+- [blacksuan material ocean](https://blacksuan19.me/material-ocean) for color in this website
 
-[stackoverflow](https://stackoverflow.com/), [codepen.io](https://codepen.io/) for code debug and test
+- [minifier css](https://cssminifier.com/) for minifying my css files
 
-[sitemap](https://www.lazee.xyz/blog/express-sitemap-case-study/) sitemap tuts
+- [animate.css](https://github.com/daneden/animate.css) for some animation
 
-[sharp](https://github.com/lovell/sharp) for image saving and converter
+- [stackoverflow](https://stackoverflow.com/), [codepen.io](https://codepen.io/) for code debug and test
 
-[bcrypt](https://github.com/dcodeIO/bcrypt.js) for password encryption
+- [sitemap](https://www.lazee.xyz/blog/express-sitemap-case-study/) sitemap tuts
+
+- [sharp](https://github.com/lovell/sharp) for image saving and converter
+
+- [bcrypt](https://github.com/dcodeIO/bcrypt.js) for password encryption
 
 
 ## Note
