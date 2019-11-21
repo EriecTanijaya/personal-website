@@ -1,12 +1,21 @@
 # Ma Personal Website
 
 <p style="text-align: center;">
-![commit activity](https://img.shields.io/github/commit-activity/m/EriecTanijaya/personal-website?style=for-the-badge)
-![last commit](https://img.shields.io/github/last-commit/EriecTanijaya/personal-website.svg?style=for-the-badge)
-![version](https://img.shields.io/badge/dynamic/json?color=blue&label=version&style=for-the-badge&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FEriecTanijaya%2Fpersonal-website%2Fmaster%2Fpackage.json)
-![stars](https://img.shields.io/github/stars/EriecTanijaya/personal-website?style=for-the-badge)
-![open issues](https://img.shields.io/github/issues/EriecTanijaya/personal-website?style=for-the-badge)
-![license](https://img.shields.io/github/license/EriecTanijaya/personal-website?style=for-the-badge)
+  <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/EriecTanijaya/personal-website?style=for-the-badge" />
+  <img alt="last commit" src="https://img.shields.io/github/last-commit/EriecTanijaya/personal-website.svg?style=for-the-badge" />
+  <img alt="version" src="https://img.shields.io/badge/dynamic/json?color=blue&label=version&style=for-the-badge&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FEriecTanijaya%2Fpersonal-website%2Fmaster%2Fpackage.json" />
+  
+  <a href="https://github.com/EriecTanijaya/personal-website/stargazers" title="stars">
+    <img alt="stars" src="https://img.shields.io/github/stars/EriecTanijaya/personal-website?style=for-the-badge" />
+  </a>
+  
+  <a href="https://github.com/EriecTanijaya/personal-website/issues" title="issues">
+    <img alt="open issues" src="https://img.shields.io/github/issues/EriecTanijaya/personal-website?style=for-the-badge" />
+  </a>
+  
+  <a href="  https://github.com/EriecTanijaya/personal-website/blob/glitch/LICENSE" title="license">
+    <img alt="license" src="https://img.shields.io/github/license/EriecTanijaya/personal-website?style=for-the-badge" />
+  </a>
 </p>
 
      messy af
