@@ -610,7 +610,13 @@ form input[type="search"]:active {
 }
 
 input:checked + .slider {
-  background-color: var(--primary-color);
+  background-color: var(--heading-color);
+}
+
+@media only screen and (min-width: 992px) {
+  input:checked + .slider {
+    background-color: var(--primary-color);
+  }
 }
 
 input:checked + .slider:before {
