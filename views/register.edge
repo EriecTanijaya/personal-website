@@ -27,7 +27,7 @@
             @endif
             
             @if(registered)
-            <span class="subheading text-light">Lets <strong><a style="color: #3A575C" href="/auth/login">login</a></strong> here</span> 
+            <span class="subheading error-msg">Lets <strong><a href="/auth/login">login</a></strong> here</span> 
             @endif
 
             <form action="/users/register" method="POST" encType="multipart/form-data">
