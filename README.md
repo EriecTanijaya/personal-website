@@ -13,6 +13,24 @@
 - storing image to webp format (better format for web)
 - theme toggler (can switch to dark mode!)
 
+## Screenshot
+
+[desktop-default]: https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2Fdesktop-default.png?v=1574323753674 "desktop default"
+<!-- [desktop-dark]: https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2Fdesktop-dark.png?v=1574323786032 "desktop dark"
+[mobile-default]: https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2Fmobile-default.png?v=1574323937908 "mobile default"
+[mobile-dark]: https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2Fmobile-dark.png?v=1574323994015 "mobile dark" -->
+
+<details>
+  <summary>Desktop Default</summary>
+  
+  ![desktop default][desktop-default]
+  
+</details>
+
+
+<!-- ![desktop dark][desktop-dark]
+![mobile default][mobile-default]
+![mobile dark][mobile-dark] -->
 
 ## How?
 - register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
