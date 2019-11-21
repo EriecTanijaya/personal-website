@@ -22,21 +22,25 @@
 
 <details>
   <summary>Desktop Default</summary>
+  
   ![desktop default][desktop-default]
 </details>
 
 <details>
   <summary>Desktop Dark</summary>
+  
   ![desktop dark][desktop-dark]
 </details>
 
 <details>
   <summary>Mobile Default</summary>
+  
   ![mobile default][mobile-default]
 </details>
 
 <details>
   <summary>Mobile Dark</summary>
+  
   ![mobile dark][mobile-dark]
 </details>
 
