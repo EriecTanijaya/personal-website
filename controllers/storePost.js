@@ -5,11 +5,17 @@ const sharp = require("sharp");
 module.exports = (req, res) => {
   if (req.files !== null) {
     const { image } = req.files;
-    image.name = image.name.replace(/\s/g, "_");
     
-    let outputImageName = image.name + "_web";
+    //its utc timezone (universal)
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
+    
+    let outputImageName = "img_" + dateTime + ".webp";
     
     let imagePath = path.resolve(__dirname, "..", "public/posts", outputImageName);
+    
     //to webp
     sharp(image.data)
       .webp()
