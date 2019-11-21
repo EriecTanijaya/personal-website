@@ -1,10 +1,14 @@
+const Post = require("../database/models/Post");
+
 module.exports = (req, res) => {
   // This is just the domain you'll append the routes to
   const fh = process.env.blog_url;
+  
   // we extract not null routes
   const routes = req.app._router.stack
     .map(r => (r.route ? r.route.path : null))
     .filter(r => r != null);
+  
   // parse each routes in an array of array containing all the possible params rotations
   const realRoutes = parseRoutes(routes);
   
@@ -18,13 +22,25 @@ module.exports = (req, res) => {
   
   flattened.shift();
   
-  // insert it into our XML
-  const sitemapOutput = `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-      ${flattened.map(r => `<url><loc>${fh}${r}</loc></url>`).join("")}
-    </urlset>`;
-  // just send it
-  res.status(200).end(sitemapOutput);
+  //adding post url too
+  let postUrl = '';
+  Post.find({})
+    .exec(function(err, posts) {
+    posts.forEach((item, index) => {
+      postUrl = '/post/' + item._id;
+      flattened.push(postUrl);
+    })
+    
+    // insert it into our XML
+    const sitemapOutput = `<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        ${flattened.map(r => `<url><loc>${fh}${r}</loc></url>`).join("")}
+      </urlset>`;
+
+    // just send it
+    res.status(200).end(sitemapOutput);
+  })
+  
 };
 
 function parsePattern(subPattern) {
