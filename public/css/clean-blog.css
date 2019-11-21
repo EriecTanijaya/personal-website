@@ -191,9 +191,9 @@ img::-moz-selection {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -67px;
+    top: -69px;
     transition: transform 0.2s;
-    border-bottom: 1px solid var(--heading-color);
+    border-bottom: 3px solid var(--heading-color);
     background-color: var(--bg-color);
   }
   #mainNav.is-fixed .navbar-brand {
@@ -209,6 +209,9 @@ img::-moz-selection {
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus,
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
     color: #88C0D0;
+  }
+  #mainNav.is-fixed input:checked + .slider {
+    background-color: var(--heading-color);
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
