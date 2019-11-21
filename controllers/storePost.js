@@ -13,7 +13,6 @@ module.exports = (req, res) => {
     var dateTime = date+'T'+time;
     
     let outputImageName = "img_" + dateTime + ".webp";
-    console.log(outputImageName);
     
     let imagePath = path.resolve(__dirname, "..", "public/posts", outputImageName);
     
