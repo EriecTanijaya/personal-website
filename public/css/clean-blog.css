@@ -159,6 +159,10 @@ img::-moz-selection {
   color: var(--font-color);
 }
 
+#mainNav .navbar-nav > li.nav-item > a:active {
+  color: #88C0D0;
+}
+
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
