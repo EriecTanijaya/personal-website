@@ -1,5 +1,23 @@
 # Ma Personal Website
 
+<p style="text-align: center;">
+  <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/EriecTanijaya/personal-website?style=for-the-badge" />
+  <img alt="last commit" src="https://img.shields.io/github/last-commit/EriecTanijaya/personal-website.svg?style=for-the-badge" />
+  <img alt="version" src="https://img.shields.io/badge/dynamic/json?color=blue&label=version&style=for-the-badge&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FEriecTanijaya%2Fpersonal-website%2Fmaster%2Fpackage.json" />
+  
+  <a href="https://github.com/EriecTanijaya/personal-website/stargazers" title="stars">
+    <img alt="stars" src="https://img.shields.io/github/stars/EriecTanijaya/personal-website?style=for-the-badge" />
+  </a>
+  
+  <a href="https://github.com/EriecTanijaya/personal-website/issues" title="issues">
+    <img alt="open issues" src="https://img.shields.io/github/issues/EriecTanijaya/personal-website?style=for-the-badge" />
+  </a>
+  
+  <a href="  https://github.com/EriecTanijaya/personal-website/blob/glitch/LICENSE" title="license">
+    <img alt="license" src="https://img.shields.io/github/license/EriecTanijaya/personal-website?style=for-the-badge" />
+  </a>
+</p>
+
      messy af
 
 ## Features
@@ -13,6 +31,36 @@
 - storing image to webp format (better format for web)
 - theme toggler (can switch to dark mode!)
 
+## Screenshot
+
+[desktop-default]: https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2Fdesktop-default.png?v=1574323753674 "desktop default"
+[desktop-dark]: https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2Fdesktop-dark.png?v=1574323786032 "desktop dark"
+[mobile-default]: https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2Fmobile-default.png?v=1574323937908 "mobile default"
+[mobile-dark]: https://cdn.glitch.com/f6f41a3d-4a40-45ac-86a0-52ef0a496c26%2Fmobile-dark.png?v=1574323994015 "mobile dark"
+
+<details>
+  <summary>Desktop Default</summary>
+  
+  ![desktop default][desktop-default]
+</details>
+
+<details>
+  <summary>Desktop Dark</summary>
+  
+  ![desktop dark][desktop-dark]
+</details>
+
+<details>
+  <summary>Mobile Default</summary>
+  
+  ![mobile default][mobile-default]
+</details>
+
+<details>
+  <summary>Mobile Dark</summary>
+  
+  ![mobile dark][mobile-dark]
+</details>
 
 ## How?
 - register to [mongodb atlas](https://www.mongodb.com/cloud/atlas)
@@ -23,23 +71,27 @@
 
 ## Thanks to
 
-[node js blog tutorial](https://vegibit.com/node-js-blog-tutorial/) for nodejs blog tutorial
+- [node js blog tutorial](https://vegibit.com/node-js-blog-tutorial/) for nodejs blog tutorial
 
-[startbootstrap clean blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog) for website theme
+- [express](https://github.com/expressjs/express) for web framework
 
-[blacksuan material ocean](https://blacksuan19.me/material-ocean) for color in this website
+- [edge](https://github.com/edge-js/edge) for template engine
 
-[minifier css](https://cssminifier.com/) for minifying my css files
+- [startbootstrap clean blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog) for website theme
 
-[animate.css](https://github.com/daneden/animate.css) for some animation
+- [blacksuan material ocean](https://blacksuan19.me/material-ocean) for color in this website
 
-[stackoverflow](https://stackoverflow.com/), [codepen.io](https://codepen.io/) for code debug and test
+- [minifier css](https://cssminifier.com/) for minifying my css files
 
-[sitemap](https://www.lazee.xyz/blog/express-sitemap-case-study/) sitemap tuts
+- [animate.css](https://github.com/daneden/animate.css) for some animation
 
-[sharp](https://github.com/lovell/sharp) for image saving and converter
+- [stackoverflow](https://stackoverflow.com/), [codepen.io](https://codepen.io/) for code debug and test
 
-[bcrypt](https://github.com/dcodeIO/bcrypt.js) for password encryption
+- [sitemap](https://www.lazee.xyz/blog/express-sitemap-case-study/) sitemap tuts
+
+- [sharp](https://github.com/lovell/sharp) for image saving and converter
+
+- [bcrypt](https://github.com/dcodeIO/bcrypt.js) for password encryption
 
 
 ## Note
