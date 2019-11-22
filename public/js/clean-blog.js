@@ -49,7 +49,7 @@
   }
 
   //checker
-  
+
   const toggleSwitch = document.querySelector(
     '.theme-switch input[type="checkbox"]'
   );
@@ -62,6 +62,10 @@
     if (currentTheme === "dark") {
       toggleSwitch.checked = true;
     }
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    //check OS theme setting
+    document.documentElement.setAttribute("data-theme", "dark");
+    toggleSwitch.checked = true;
   }
 
   function switchTheme(e) {
@@ -73,7 +77,7 @@
       localStorage.setItem("theme", "light"); //add this
     }
   }
-  
-  toggleSwitch.addEventListener('change', switchTheme, false);
+
+  toggleSwitch.addEventListener("change", switchTheme, false);
   
 })(jQuery); // End of use strict
