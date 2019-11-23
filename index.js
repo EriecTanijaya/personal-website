@@ -30,7 +30,7 @@ const commentController = require("./controllers/storeComment");
 
 const app = new express();
 
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 
 function checkHttps(req, res, next) {
   // protocol check, if http, redirect to https

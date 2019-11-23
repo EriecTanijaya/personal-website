@@ -41,12 +41,14 @@
             @if(auth == post.username)
             <hr>
             
-            <div class="col-lg-8 col-md-10 mx-auto">
-              <form action="/post/delete/{{ post._id }}" method="POST">
-                  <div>
-                      <button class="btn btn-danger float-right">delete post</button>
-                  </div>
-              </form>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                  <form action="/post/delete/{{ post._id }}" method="POST">
+                    <button class="btn btn-danger float-right">delete post</button>
+                  </form>
+                </div>
+              </div>
             </div>
             @endif
             
@@ -55,8 +57,10 @@
             <div class="col-lg-8 col-md-10 mt-5 mx-auto">
               
                 @each(user in post.comments)
-                <p>{{ user.username }} says </p>
-                <p>"{{ user.content }}"</p>
+                <div class="comment-content p-3">
+                 <a href="#"><strong>{{ user.username }}</strong></a><br>
+                 &emsp;{{ user.content }}<br>
+                </div>
                 @endeach
           
             </div>
