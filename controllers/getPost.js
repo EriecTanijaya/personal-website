@@ -5,8 +5,9 @@ module.exports = async (req, res) => {
   if (!post) {
     res.status(404);
     const title = "WeekyDay Blog | Kosonk?!";
-    return res.render("notFound", { title });
+    return res.render("notFound", { title: title, auth: req.session.userId });
   }
+  console.log("ini di getPost controller", post);
   const auth = req.session.username;
   const title = "WeekyDay Blog | " + post.title;
   res.render("post", { post, title, auth });

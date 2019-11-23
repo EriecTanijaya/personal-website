@@ -24,28 +24,65 @@
 <article>
     <div class="container">
         <div class="row">
+            
             <div class="col-lg-8 col-md-10 mx-auto post-content">
               @if(post.image != "noImage")
               <img src={{ post.image }} style="width: 100%" alt={{ post.description }}>
               @endif
                 {{ post.content }}
             </div>
-        </div>
-    </div>
-</article>
+            
+            
+            </div>
+          </div>
+        </article>
+            
+            <!-- delete post button -->
+            @if(auth == post.username)
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <a class="btn btn-danger float-right" href="/post/delete/{{ post._id }}">delete post</a>
+                    </div>
+                </div>
+            </div>
+            @endif
+            
+            <!-- comment content -->
+            @if(post.comments.length > 0)
+            <div class="col-lg-8 col-md-10 mt-5 mx-auto">
+              
+                @each(user in post.comments)
+                <p>{{ user.username }} says </p>
+                <p>"{{ user.content }}"</p>
+                @endeach
+          
+            </div>
+            @endif
+            
+            <!-- comment box -->
+            @if(auth)
+            <div class="col-lg-8 col-md-10 mt-5 mx-auto">
+              <form action="/post/comment/{{ post._id }}" method="POST">
+                  <input type="hidden" name="username" value={{ auth }}>
+                  <div class="control-group">
+                      <div class="form-group floating-label-form-group controls">
+                          <textarea name="content" placeholder="what your opinion?" class="form-control"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-group my-4">
+                      <button class="btn btn-primary">comment</button>
+                  </div>
+              </form>
+            </div>
+            @else
+            <div class="col-lg-8 col-md-10 mt-5 mx-auto">
+              <a href="/">Login to comment</a>
+            </div>
+            @endif
+        
 
-<!-- delete post button -->
-
-@if(auth == post.username)
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <a class="btn btn-danger float-right" href="/post/delete/{{ post._id }}">delete post</a>
-        </div>
-    </div>
-</div>
-@endif
-
-<hr> 
+<hr>
 
 @endsection

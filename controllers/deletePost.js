@@ -4,7 +4,7 @@ const fs = require("fs");
 module.exports = async (req, res) => {
   const post = await Post.findById(req.params.id);
   const auth = req.session.userId;
-
+  console.log("ori url", req.originalUrl);
   if (!post) {
     res.status(404);
     const title = "WeekyDay Blog | Kosonk?!";
@@ -13,7 +13,9 @@ module.exports = async (req, res) => {
   // return res.redirect("/");
 
   //delete img
+  console.log("ini di delete controller");
   console.log("post", post);
+  
   //hacky hacky
   if (post.image !== "noImage") {
     let path = "public" + post.image;

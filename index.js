@@ -24,6 +24,7 @@ const searchController = require("./controllers/search");
 const searchPostController = require("./controllers/searchPost");
 const aboutController = require("./controllers/about");
 const sitemapController = require("./controllers/sitemap");
+const commentController = require("./controllers/storeComment");
 
 const app = new express();
 
@@ -53,7 +54,8 @@ mongoose
   .connect(connectionString, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useFindAndModify: false
   })
   .then(() => console.log("You are now connected to Mongo!"))
   .catch(err => console.error("Something went wrong", err));
@@ -97,9 +99,14 @@ app.get("/", homePageController);
 //TODO
 //buat daftar isi page app.get("/p")
 
-app.get("/p/:page", pagingController);
+app.get("/about", aboutController);
+app.get("/search", searchController);
+app.get("/sitemap", sitemapController);
 app.get("/posts/new", auth, createPostController);
+
+app.get("/p/:page", pagingController);
 app.post("/posts/store", auth, storePost, storePostController);
+app.post("/post/comment/:id", auth, checkId, commentController);
 app.get("/post/:id", checkId, getPostController);
 app.get("/auth/register", redirectIfAuthenticated, createUserController);
 app.get("/auth/login", redirectIfAuthenticated, loginController);
@@ -107,16 +114,13 @@ app.get("/auth/logout", logoutController);
 app.post("/users/login", redirectIfAuthenticated, loginUserController);
 app.post("/users/register", redirectIfAuthenticated, storeUserController);
 app.get("/post/delete/:id", auth, checkId, deletePostController);
-app.get("/search", searchController);
 app.get("/search/post", searchPostController);
-app.get("/about", aboutController);
-app.get("/sitemap", sitemapController);
 
 //show 404 if dont have matching route
 app.use(function(req, res, next) {
   res.status(404);
   const title = "WeekyDay Blog | Kosonk?!";
-  res.render("notFound", { title });
+  res.render("notFound", { title: title, auth: req.session.userId });
 });
 
 app.listen(4000, () => {

@@ -15,7 +15,7 @@ module.exports = (req, res) => {
     let outputImageName = "img_" + dateTime + ".webp";
     
     let imagePath = path.resolve(__dirname, "..", "public/posts", outputImageName);
-    
+    console.log("skrg di storePost");
     //to webp
     sharp(image.data)
       .webp()
@@ -30,7 +30,7 @@ module.exports = (req, res) => {
         image: `/posts/${outputImageName}`
       },
       (error, post) => {
-        res.redirect("/");
+       return res.redirect("/");
       }
     );
   } else {
@@ -38,7 +38,7 @@ module.exports = (req, res) => {
       //hacky hacky
       { ...req.body, image: "noImage" },
       (error, post) => {
-        res.redirect("/");
+        return res.redirect("/");
       }
     );
   }
