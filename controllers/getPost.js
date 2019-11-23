@@ -10,5 +10,5 @@ module.exports = async (req, res) => {
   console.log("ini di getPost controller", post);
   const auth = req.session.username;
   const title = "WeekyDay Blog | " + post.title;
-  res.render("post", { post, title, auth });
+  return res.render("post", { post, title, auth });
 };

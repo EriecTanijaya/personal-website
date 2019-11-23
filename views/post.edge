@@ -40,12 +40,13 @@
             <!-- delete post button -->
             @if(auth == post.username)
             <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-10 mx-auto">
-                        <a class="btn btn-danger float-right" href="/post/delete/{{ post._id }}">delete post</a>
-                    </div>
-                </div>
+            
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <form action="/post/delete/{{ post._id }}" method="POST">
+                  <div>
+                      <button class="btn btn-danger float-right">delete post</button>
+                  </div>
+              </form>
             </div>
             @endif
             
@@ -68,7 +69,7 @@
                   <input type="hidden" name="username" value={{ auth }}>
                   <div class="control-group">
                       <div class="form-group floating-label-form-group controls">
-                          <textarea name="content" placeholder="what your opinion?" class="form-control"></textarea>
+                          <textarea name="content" placeholder="what your opinion?" class="form-control" required></textarea>
                       </div>
                   </div>
                   <div class="form-group my-4">
@@ -78,7 +79,7 @@
             </div>
             @else
             <div class="col-lg-8 col-md-10 mt-5 mx-auto">
-              <a href="/">Login to comment</a>
+              <a href="/auth/login">Login to comment</a>
             </div>
             @endif
         

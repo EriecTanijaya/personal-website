@@ -8,6 +8,8 @@ const expressSession = require("express-session");
 const connectMongo = require("connect-mongo");
 const connectFlash = require("connect-flash");
 
+var morgan = require("morgan");
+
 //TODO: susun ini buat rapi
 const createPostController = require("./controllers/createPost");
 const homePageController = require("./controllers/homePage");
@@ -27,6 +29,8 @@ const sitemapController = require("./controllers/sitemap");
 const commentController = require("./controllers/storeComment");
 
 const app = new express();
+
+app.use(morgan('dev'));
 
 function checkHttps(req, res, next) {
   // protocol check, if http, redirect to https
@@ -113,7 +117,7 @@ app.get("/auth/login", redirectIfAuthenticated, loginController);
 app.get("/auth/logout", logoutController);
 app.post("/users/login", redirectIfAuthenticated, loginUserController);
 app.post("/users/register", redirectIfAuthenticated, storeUserController);
-app.get("/post/delete/:id", auth, checkId, deletePostController);
+app.post("/post/delete/:id", auth, checkId, deletePostController);
 app.get("/search/post", searchPostController);
 
 //show 404 if dont have matching route

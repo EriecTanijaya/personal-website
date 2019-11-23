@@ -17,7 +17,8 @@
     "express-fileupload": "^1.1.6",
     "express-session": "^1.16.1",
     "mongoose": "^5.7.12",
-    "sharp": "^0.23.2"
+    "sharp": "^0.23.2",
+    "morgan": "^1.9.1"
   },
   "engines": {
     "node": "8.x"
