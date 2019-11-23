@@ -30,6 +30,7 @@
 - sitemap system
 - storing image to webp format (better format for web)
 - theme toggler (can switch to dark mode!)
+- comment system
 
 ## Screenshot
 
