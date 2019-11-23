@@ -27,7 +27,9 @@
 
             <div class="col-lg-8 col-md-10 mx-auto post-content">
                 @if(post.image != "noImage")
-                <img src={{ post.image }} style="width: 100%" alt={{ post.description }}> @endif {{ post.content }}
+                <img src={{ post.image }} style="width: 100%" alt={{ post.description }}> 
+                @endif 
+                {{ post.content }}
             </div>
 
         </div>
@@ -55,9 +57,8 @@
 
     @each(user in post.comments)
     <div class="comment-content p-3">
-        <a href="#"><strong>{{ user.username }}</strong></a>
-        <br> &emsp;{{ user.content }}
-        <br>
+        <a href="#"><strong style="font-size: 125%">{{ user.username }}</strong></a> <em>on {{ user.time }}</em> <br> 
+        &emsp;{{ user.content }}<br>
     </div>
     @endeach
 
