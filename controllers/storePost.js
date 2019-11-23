@@ -6,16 +6,10 @@ module.exports = (req, res) => {
   if (req.files !== null) {
     const { image } = req.files;
     
-    //its utc timezone (universal)
-    var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var dateTime = date+'T'+time;
-    
-    let outputImageName = "img_" + dateTime + ".webp";
+    let outputImageName = "img_" + req.body.title + ".webp";
     
     let imagePath = path.resolve(__dirname, "..", "public/posts", outputImageName);
-    
+    console.log("skrg di storePost");
     //to webp
     sharp(image.data)
       .webp()
@@ -30,7 +24,7 @@ module.exports = (req, res) => {
         image: `/posts/${outputImageName}`
       },
       (error, post) => {
-        res.redirect("/");
+       return res.redirect("/");
       }
     );
   } else {
@@ -38,7 +32,7 @@ module.exports = (req, res) => {
       //hacky hacky
       { ...req.body, image: "noImage" },
       (error, post) => {
-        res.redirect("/");
+        return res.redirect("/");
       }
     );
   }

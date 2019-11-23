@@ -9,7 +9,17 @@ const PostSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: new Date()
-  }
+  },
+  comments: [
+    {
+      username: String,
+      content: String,
+      createdAt: {
+        type: Date,
+        default: new Date()
+      }
+    }
+  ]
 });
 
 PostSchema.index(

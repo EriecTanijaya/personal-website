@@ -638,3 +638,11 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* comment content */
+
+.comment-content {
+  position: relative;
+  color: var(--font-color);
+  background-color: var(--primary-color);
+}

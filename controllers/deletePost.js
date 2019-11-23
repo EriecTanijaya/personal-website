@@ -4,7 +4,7 @@ const fs = require("fs");
 module.exports = async (req, res) => {
   const post = await Post.findById(req.params.id);
   const auth = req.session.userId;
-
+  
   if (!post) {
     res.status(404);
     const title = "WeekyDay Blog | Kosonk?!";
@@ -12,8 +12,7 @@ module.exports = async (req, res) => {
   }
   // return res.redirect("/");
 
-  //delete img
-  console.log("post", post);
+  ///delete img  
   //hacky hacky
   if (post.image !== "noImage") {
     let path = "public" + post.image;
