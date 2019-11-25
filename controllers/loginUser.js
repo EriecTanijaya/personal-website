@@ -25,6 +25,8 @@ module.exports = (req, res) => {
             });
           } else {
             //salah password
+            console.log("user didb", user);
+            console.log("password entered", password);
             loginErrors.push("Sum ting wong in your password");
             req.flash("loginErrors", loginErrors);
             res.redirect("/auth/login");

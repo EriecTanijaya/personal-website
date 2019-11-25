@@ -2,6 +2,7 @@ const User = require("../database/models/User");
 
 module.exports = (req, res) => {
   User.create(req.body, (error, user) => {
+    console.log("user created", user);
     if (error) {
       var registrationErrors = [];
 
@@ -24,6 +25,6 @@ module.exports = (req, res) => {
       req.flash("registrationErrors", registrationErrors);
       return res.redirect("/auth/register");
     }
-    res.redirect("/");
+    res.redirect("/auth/login");
   });
 };
