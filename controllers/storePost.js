@@ -5,8 +5,8 @@ const sharp = require("sharp");
 module.exports = (req, res) => {
   if (req.files !== null) {
     const { image } = req.files;
-    
-    let outputImageName = "img_" + req.body.title + ".webp";
+    let imgTitle = req.body.title.replace(/\s/g, "_");
+    let outputImageName = "img_" + imgTitle + ".webp";
     
     let imagePath = path.resolve(__dirname, "..", "public/posts", outputImageName);
     console.log("skrg di storePost");
