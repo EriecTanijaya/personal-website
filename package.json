@@ -11,13 +11,13 @@
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.2.0",
-    "edge.js": "^3.0.3",
+    "edge.js": "^3.0.5",
     "express": "^4.17.1",
     "express-edge": "^2.0.2",
     "express-fileupload": "^1.1.6",
     "express-session": "^1.17.1",
-    "mongoose": "^5.9.12",
-    "sharp": "^0.25.2",
+    "mongoose": "^5.9.21",
+    "sharp": "^0.25.4",
     "morgan": "^1.10.0"
   },
   "engines": {
