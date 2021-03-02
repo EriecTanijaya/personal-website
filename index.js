@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
 const expressSession = require("express-session");
-const connectMongo = require("connect-mongo");
+const mongoStore = require("connect-mongo").default;
 const connectFlash = require("connect-flash");
 
 var morgan = require("morgan");
@@ -64,15 +64,14 @@ mongoose
   .then(() => console.log("You are now connected to Mongo!"))
   .catch(err => console.error("Something went wrong", err));
 
-const mongoStore = connectMongo(expressSession);
-
 app.use(
   expressSession({
     secret: "secret",
     saveUninitialized: true,
     resave: true,
-    store: new mongoStore({
-      mongooseConnection: mongoose.connection
+    store: mongoStore.create({
+      mongoUrl: connectionString,
+      clientPromise: mongoose.connection
     })
   })
 );
