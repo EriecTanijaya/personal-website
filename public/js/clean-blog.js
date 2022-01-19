@@ -79,11 +79,5 @@
   }
 
   toggleSwitch.addEventListener("change", switchTheme, false);
-
-  // navbar active
-  $("li.nav-item").click(function () {
-    $("li.nav-item").removeClass("active");
-    $(this).addClass("active");
-  });
   
 })(jQuery); // End of use strict

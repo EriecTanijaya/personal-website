@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #BCBFC5;
+    --primary-color: #DA9100;
     --font-color: #00010A;
     --bg-color: #fff;
-    --heading-color: #f0c46c;
-    --hover-color: #F5C972;
+    --heading-color: #E6A016;
+    --hover-color: #FFE5B3;
 }
 
 [data-theme="dark"] {
@@ -488,13 +488,13 @@ footer .copyright {
 .btn-primary {
   background-color: var(--heading-color);
   border-color: var(--heading-color);
-  color: var(--font-color);
+  color: var(--bg-color);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  color: var(--bg-color);
+  color: var(--font-color);
   background-color: var(--hover-color) !important;
   border-color: var(--hover-color) !important;
 }
