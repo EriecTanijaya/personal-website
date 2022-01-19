@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
 const expressSession = require("express-session");
-const mongoStore = require("connect-mongo").default;
+const mongoStore = require("connect-mongo");
 const connectFlash = require("connect-flash");
 
 var morgan = require("morgan");
@@ -58,8 +58,6 @@ mongoose
   .connect(connectionString, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false
   })
   .then(() => console.log("You are now connected to Mongo!"))
   .catch(err => console.error("Something went wrong", err));
