@@ -5,6 +5,7 @@ module.exports = (req, res, next) => {
   var page = parseInt(req.params.page);
 
   var title = "WeekyDay Blog | Blogs";
+  var username = req.session.username;
   Post.find({})
     .sort("-createdAt")
     .skip(perPage * page - perPage)
@@ -23,7 +24,8 @@ module.exports = (req, res, next) => {
           current: page,
           pages: pages,
           title: title,
-          auth: req.session.userId
+          auth: req.session.userId,
+          username
         });
       });
     });

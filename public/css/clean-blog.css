@@ -1,15 +1,17 @@
 :root {
-    --primary-color: #E5E9F0;
+    --primary-color: #DA9100;
     --font-color: #00010A;
     --bg-color: #fff;
-    --heading-color: #EBCB8B;
+    --heading-color: #E6A016;
+    --hover-color: #FFE5B3;
 }
 
 [data-theme="dark"] {
-    --primary-color: #0F111A;
+    --primary-color: #3e5f65;
     --font-color: #fff;
     --bg-color: #00010A;
-    --heading-color: #3A575C;
+    --heading-color: #6a9ba3;
+    --hover-color: #76A7AF;
 }
 
 @font-face {
@@ -73,7 +75,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #88C0D0;
+  color: var(--hover-color);
 }
 
 blockquote {
@@ -148,7 +150,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #88C0D0;
+  color: var(--hover-color);
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -160,7 +162,11 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav > li.nav-item > a:active {
-  color: #88C0D0;
+  color: var(--hover-color);
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+  color: var(--font-color);
 }
 
 @media only screen and (min-width: 992px) {
@@ -174,7 +180,7 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand:focus,
   #mainNav .navbar-brand:hover {
-    color: #88C0D0;
+    color: var(--hover-color);
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
@@ -182,7 +188,7 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav > li.nav-item > a:focus,
   #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: #88C0D0;
+    color: var(--hover-color);
   }
 }
 
@@ -206,14 +212,14 @@ img::-moz-selection {
   }
   #mainNav.is-fixed .navbar-brand:focus,
   #mainNav.is-fixed .navbar-brand:hover {
-    color: #88C0D0;
+    color: var(--hover-color);
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: var(--font-color);
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus,
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #88C0D0;
+    color: var(--hover-color);
   }
   #mainNav.is-fixed input:checked + .slider {
     background-color: var(--heading-color);
@@ -328,14 +334,14 @@ header.masthead .post-heading .meta a {
 .post-preview > a:hover {
   text-decoration: none;
 /*   color: #0085A1; */
-  color: #88C0D0;
+  color: var(--hover-color);
 }
 
 .post-preview > a > .post-title {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
-  color: var(--heading-color);
+  color: var(--bg-color);
 }
 
 .post-preview > a > .post-subtitle {
@@ -359,7 +365,7 @@ header.masthead .post-heading .meta a {
 .post-preview > .post-meta > a:focus,
 .post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: #88C0D0;
+  color: var(--hover-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -419,7 +425,7 @@ select:-webkit-autofill:focus {
 .floating-label-form-group input::-webkit-input-placeholder,
 .floating-label-form-group textarea::-webkit-input-placeholder {
   background-color: var(--bg-color);
-  color: #88C0D0;
+  color: var(--hover-color);
   font-family: "Space Mono", "Times New Roman", serif;
 }
 
@@ -447,7 +453,7 @@ select:-webkit-autofill:focus {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #88C0D0;
+  color: var(--hover-color);
 }
 
 form .form-group:first-child .floating-label-form-group {
@@ -480,17 +486,17 @@ footer .copyright {
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: var(--font-color);
+  background-color: var(--heading-color);
+  border-color: var(--heading-color);
+  color: var(--bg-color);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  color: var(--primary-color);
-  background-color: #88C0D0 !important;
-  border-color: #88C0D0!important;
+  color: var(--font-color);
+  background-color: var(--hover-color) !important;
+  border-color: var(--hover-color) !important;
 }
 
 .btn-lg {
@@ -521,7 +527,7 @@ footer .copyright {
 
 .raise:hover,
 .raise:focus {
-  box-shadow: inset 0 -0.6em 0 -0.35em #88C0D0;
+  box-shadow: inset 0 -0.6em 0 -0.35em var(--hover-color);
   transform: scale(1.03);
   transition: 0.25s;
 }
@@ -558,7 +564,7 @@ form input[type="search"]::-webkit-search-cancel-button {
 
 form input[type="search"]:focus,
 form input[type="search"]:active {
-  border: solid 3px #88C0D0;
+  border: solid 3px var(--hover-color);
   outline: solid var(--font-color) 2000px;
   color: var(--font-color);
   background-color: var(--bg-color);
@@ -568,7 +574,7 @@ form input[type="search"]:active {
 
 .raise:hover .post-title,
 .raise:active .post-title {
-  color: #88C0D0;
+  color: var(--hover-color);
 }
 
 /* error msg */
